@@ -1,0 +1,226 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="index-container about-all">
+    <div class="why-us hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+            <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+            <li><a href="{% url 'basic_app:products_stock' %}">Stock</a></li>
+            <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+            <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+            <li><a href="{% url 'basic_app:products_shares' %}">Shares</a></li>
+            <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+            <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+            <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+            <li><a class="current" href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+    <div class="index-legal">
+        <div class="discover why-title">
+            <h3>TRADE COMMODITIES WITH CRISOPTIONS</h3>
+        </div>
+
+        <div class="why-us-image">
+            <p><img src="{% static 'images/commodities.jfif' %}" alt=""></p>
+        </div>
+
+        <div class="discover gen-title">
+            <p>CrisOption allows for investment of an extensive list of precious metals (gold, silver, platinum etc.), agricultural products (wheat, corn, coffee, cotton and sugar etc.) and energy products (oil, natural gas etc.). <br>
+                With access to this market through our trading platform, it is possible to trade these goods, and take advantage of leverage up to 400: 1 on your investments, allowing you to trade with values up to 400 times of the value of your account.</p>            
+            <br>
+
+            <h4>WHAT DOES TRADING COMMODITY MEAN?</h4>
+            <p>The Forex trading term: Commodity is defined as “a good that can be exchanged for another good of the same type.” Therefore, trading in commodities refers to the purchase and sale of those commodities around the globe. <br> <br>
+
+                Many investors in global markets tend to trade commodities with CFD for a variety of commodities, since it allows profit to be made on ongoing operations with both higher and lower prices. <br> <br>
+                
+                Since CFD trading is a form of margin trading the initial quota should be lower than it is, in case of a purchase of a basic commodity, but there is an exposure to risk of complete movement. <br> <br>
+                
+                The most  precious commodities can be categorized into four categories: <br> <br>
+
+                * Precious metals <br>
+                * Agriculture <br>
+                * Energy <br>
+                * Cultured commodities <br>
+
+                While precious metals and energy commodities are pretty common; agriculture includes crops such as wheat,  and cultured commodities refer to coffee, sugar, and cocoa. <br> <br>
+
+                Gold, silver, and crude oil are considered to be the best known and most traded commodities through CFD. <br> <br>
+
+                There are many factors that affect commodities, such as ‘productions’, which are major factors in the fluctuation of for prices,with seasonal changes affecting the value of crops. But the most influential factor is the offer and demand price. <br> <br>
+
+                Storage capacity, especially with energy commodities, is considered a main factor that can affect offer prices of these commodities.
+            </p>
+            <br>
+
+            <h4>BENEFITS OF TRADING COMMODITIES</h4>
+            <P>* Narrow point difference (fixed-variable-ICN), as well as competitive prices without commissions or hidden fees <br> <br>
+
+                * Opportunity to take advantage of the rise and decline in commodity prices <br> <br>
+                
+                * Opportunity to take advantage of international political tensions <br> <br>
+                
+                * Control the volume of profit and loss through take-profit and stop-loss service <br> <br>
+                
+                * Our clients can get information which is critically analyzed by our analysts in the real time. <br> <br>
+                
+                * Market is open 24/5, Sunday 22:00 GMT - Friday 21:00 GMT <br> <br>
+                
+                CrisOption offers a wide platform that allows you have access to a wide variety of CFDs. Our most popular CFD is for Crude Oil. Because of our innovative nature, our CFDs for commodities present a new way for traders to explore the industry of trading.</P>
+
+
+         </div>
+    </div>
+
+    <div class="why-us big-hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+            <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+            <li><a href="{% url 'basic_app:products_stock' %}">Stock</a></li>
+            <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+            <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+            <li><a href="{% url 'basic_app:products_shares' %}">Shares</a></li>
+            <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+            <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+            <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+            <li><a class="current" href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="index-last">
+    <div class="ending">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <div class="images">
+            <img src="{% static 'images/bitcoin.jfif' %}" alt="">
+            <img src="{% static 'images/master.jfif' %}" alt="">
+            <img src="{% static 'images/visa.jfif' %}" alt="">
+            <img src="{% static 'images/paypal.jfif' %}" alt="">
+            <img src="{% static 'images/neteller.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/payeer.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/maestro.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/giropay.jfif' %}" alt="">
+            
+        </div>
+    </div>
+
+    <div class="last-header">
+        <div class="market-1">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                <li><a href="{% url 'basic_app:products_stock' %}">Stocks</a></li>
+                <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            </ul>    
+        </div>
+
+        <div class="market-2">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-1">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:why_us' %}">Why Us</a></li>
+                <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'basic_app:terms' %}">Legal Terms</a></li>
+                <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                <li><a href="{% url 'basic_app:safety_funds' %}">Funds Safety</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-2 hide">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                <li><a href="{% url 'basic_app:global_awards' %}">Global Awards </a></li>
+                <li><a href="{% url 'basic_app:faq' %}">FAQs</a></li>
+                <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            </ul>   
+        </div>
+
+        <div class="trading-1 hide">
+            <h3>Trading</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Trading Conditions</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Platforms</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Deposit/Withdrawal</a></li>
+            </ul>   
+        </div>
+
+        <div class="education-1 hide">
+            <h3>Education</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages Of CFDs</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+            </ul>   
+        </div>
+
+    </div>
+
+    <div class="support">
+        <p>Message us on <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+    </div>
+
+    <div class="license">
+        <p>CrisOption (www.crisoption.com) is License by the Cyprus Securities and 
+            Exchange Commission with CIF license number 104/14, regulated by the International Financial Services 
+            Commission of Belize with License numbers IFSC/59/365/TC and IFSC/50/317/AEM.</p>
+    </div>
+
+    <div class="secure">
+        <i class="fa-solid fa-globe fa-4x py-1"></i> 
+        <img src="{% static 'images/secure1.png' %}" alt=""> 
+        <img src="{% static 'images/secure2.png' %}" alt=""> 
+    </div>
+</div>
+
+<div class="footer">
+    <p>CrisOption &copy; 2023. All Rights Reserved.</p>
+</div>
+
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+{% endblock %}

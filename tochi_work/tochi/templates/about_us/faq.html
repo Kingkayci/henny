@@ -1,0 +1,266 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="index-container about-all">
+    <div class="why-us hide">
+        <h3>ABOUT</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:why_us' %}">Why us</a></li>
+            <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+            <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+            <li><a href="{% url 'basic_app:global_awards' %}">Global Awards</a></li>
+            <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+            <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+            <li><a href="{% url 'basic_app:safety_funds' %}">Safety Of Funds</a></li>
+            <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            <li><a href="{% url 'basic_app:terms' %}">Terms And Conditions</a></li>
+            <li><a class="current" href="{% url 'basic_app:faq' %}">FAQ</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+    <div class="index-legal">
+        <div class="discover why-title">
+            <h3>Frequently Asked Questions</h3>
+        </div>
+
+        <div class="discover gen-title faq-headers">
+            <h4>What type of document is required for an account validation?</h4>
+            <p>* A color copy of valid passport or other official identification document issued by authorities (e.g. driver's license, identity card, etc). The identification document must contain the client's full name, an issue or expiry date, the client's place and date of birth or tax identification number and the client's signature. <br> <br>
+
+                * Residency certificate or tenancy contract, a recent utility bill (e.g. electricity, gas, water, phone, oil, Internet and/or cable TV connection, bank account statement) dated within the last 6 months and confirming your registered address.</p>
+            <br>
+
+            <h4>Do I need to provide my proof of residency?</h4>
+            <p>Yes, you do. In order to start trading and to be able to make withdrawals from your account, your account has to be validated, therefore you must provide a recent utility bill (e.g. electricity, gas, water, phone, oil, Internet and/or cable TV connection) or bank account statement not older than 6 months, and confirming your registered address.</p>
+
+            <br>
+
+            <h4>Why do I need to submit my documents for account validation?</h4>
+            <p>As a regulated company, we operate in accordance with a number of compliance-related issues and procedures imposed by our regulatory authorities. These procedures involve the collection of adequate documentation from our clients with regards to KYC (Know Your Client), including the collection of a valid ID card and a recent (within 6 months) utility bill or bank account statement that confirms the address the client has registered with.</p>
+            
+            <br>
+
+            <h4>Do I need to update my personal information?</h4>
+            <p>If you wish to update your email address, please send an email to <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a> from your registered email address. <br>
+                If you wish to update your residential address, please send an email to <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a> from your registered email address and upload the POR (not older than 6 months) confirming that address in the Members Area.</p>
+            
+            <br>    
+
+            <h4>What is the minimun fund I can deposit into my account?</h4>
+            <p>Minimum deposit into a new account is 300 USD while maximum deposit is 30,000 USD</p>
+        
+            <br>
+
+            <h4>What is the safety of my funds with crisOption?</h4>
+            <p>CrisOption maintains isolated client accounts to ensure that client funds are fully segregated from CrisOption's own funds at all times. Client accounts have the required coding to ensure that they are used for clients’ funding purposes. All client funds deposited at CrisOption sare completely separated following our strict policies and procedures, with activities monitored and reviewed by our external and internal auditors. As a client, you can be assured that your funds are safe.</p>
+
+            <br>
+
+            <h4>How much money can I make trading?</h4>
+            <p>The amount of money you can make depends on how much you are willing to risk and what products you decide to trade. A key to a winning trading strategy is to minimise your risk through our guaranteed stop loss feature. However, forex trading is risky and there are no guarantees.</p>
+
+            <br>
+
+            <h4>How can I change the base currency of my account?</h4>
+            <p>It is not possible to change the base currency of your account, however you can open a new account at any time (with a different email address) and then specify your preferred base currency.</p>
+
+            <br>
+
+            <h4>Can I open more than one trading account?</h4>
+            <p>No, each client is not allowed to have more than one trading account.</p>
+
+            <br>
+
+            <h4>Do you accept U.S clients?</h4>
+            <p>Yes, we accept clients from the united states.</p>
+
+            <br>
+
+            <h4>Do you offer binary trading option?</h4>
+            <p>Yes, we do.</p>
+
+            <br>
+
+            <h4>What payments options do I have to deposit / withdraw money?</h4>
+            <p>We offer a wide range of payment options for deposits/withdrawals: Debit & Credit Cards, bank wire transfer, local bank transfer, bitcoin, skrill, neteller, paypal, and other payment methods. <br>
+                As soon as you open a trading account, you can log in to our Members Area, select a payment method of your preference on the Deposits/Withdrawal pages.</p>
+            
+            <br>
+            <h4>In which currency can I deposit money into my trading account?</h4>
+            <p>You can deposit money in any currency and it will be automatically converted into the base currency of your account, by CrisOption sprevailing inter-bank price.</p>
+            
+            <br>
+            <h4>What is the withdrawal priority procedure?</h4>
+            <p>In order to protect all parties against fraud and minimise the possibility of money laundering and/or terrorist financing, CrisOption swill only process withdrawal/refunds back to the source of the original deposit according to the Withdrawal Priority Procedure below: <br> <br>
+
+                * Credit/debit card withdrawals. Withdrawal requests submitted, regardless of the withdrawal method chosen, will be processed via this channel up to the total amount deposited by this method. <br>
+                * E-wallet withdrawals. E-wallet refunds/withdrawals will be processed once all Credit/Debit card deposits have been completely refunded. <br>
+                * Other Methods. All other methods such as bank wire withdrawals shall be used once deposits made with the above two methods have been completely exhausted. <br> <br>
+                
+                All withdrawal requests will be completed within 24 working hours; however all withdrawal requests submitted will be instantly reflected in the clients’ trading account as pending withdrawals. In case a client selects an incorrect withdrawal method, the clients’ request will be processed according to the Withdrawal Priority Procedure described above. All client withdrawal requests shall be processed in the currency in which the deposit was originally made. Should the deposit currency differ from the transfer currency, the transfer amount will be converted by CrisOption sinto the transfer currency at the prevailing exchange rate.</p>
+            
+            <br>
+            <h4>Can I withdraw my money whenever I want?</h4>
+            <p>In order to withdraw funds, your trading account must be validated. This means that first you need to upload your documents in our Members Area: Proof of Identity (ID, passport, driving license) and Proof of Residency (utility bill, telephone/Internet/TV bill or bank statement), which include your address and your name and can’t be older than 6 months. <br> <br>
+
+                Once you receive confirmation from our Validation Department that your account has been validated, you can request the funds withdrawal by logging in to the Members Area, selecting the Withdrawal tab and sending us a withdrawal request. It is only possible to send your withdrawal back to the original source of deposit. All withdrawals are processed by our Back Office within 24 hours on business days.</p>
+            <br>
+
+            <h4>How long does it take to recieve my money after I make a withdrawal request?</h4>
+            <p>Your withdrawal request is processed by our back office within 24 hours. Via any e-wallet methods you will receive your money on the same day, and via bank wire or credit/debit card it usually takes 2 - 5 business days.</p>
+            
+            <br>
+
+        </div>
+    </div>
+
+    <div class="why-us big-hide">
+        <h3>ABOUT</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:why_us' %}">Why us</a></li>
+            <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+            <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+            <li><a href="{% url 'basic_app:global_awards' %}">Global Awards</a></li>
+            <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+            <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+            <li><a href="{% url 'basic_app:safety_funds' %}">Safety Of Funds</a></li>
+            <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            <li><a href="{% url 'basic_app:terms' %}">Terms And Conditions</a></li>
+            <li><a class="current" href="{% url 'basic_app:faq' %}">FAQ</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="index-last">
+    <div class="ending">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <div class="images">
+            <img src="{% static 'images/bitcoin.jfif' %}" alt="">
+            <img src="{% static 'images/master.jfif' %}" alt="">
+            <img src="{% static 'images/visa.jfif' %}" alt="">
+            <img src="{% static 'images/paypal.jfif' %}" alt="">
+            <img src="{% static 'images/neteller.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/payeer.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/maestro.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/giropay.jfif' %}" alt="">
+            
+        </div>
+    </div>
+
+    <div class="last-header">
+        <div class="market-1">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                <li><a href="{% url 'basic_app:products_stock' %}">Stocks</a></li>
+                <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            </ul>    
+        </div>
+
+        <div class="market-2">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-1">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:why_us' %}">Why Us</a></li>
+                <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'basic_app:terms' %}">Legal Terms</a></li>
+                <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                <li><a href="{% url 'basic_app:safety_funds' %}">Funds Safety</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-2 hide">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                <li><a href="{% url 'basic_app:global_awards' %}">Global Awards </a></li>
+                <li><a href="{% url 'basic_app:faq' %}">FAQs</a></li>
+                <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            </ul>   
+        </div>
+
+        <div class="trading-1 hide">
+            <h3>Trading</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Trading Conditions</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Platforms</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Deposit/Withdrawal</a></li>
+            </ul>   
+        </div>
+
+        <div class="education-1 hide">
+            <h3>Education</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages Of CFDs</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+            </ul>   
+        </div>
+
+    </div>
+
+    <div class="support">
+        <p>Message us on <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+    </div>
+
+    <div class="license">
+        <p>CrisOption (www.crisoption.com) is License by the Cyprus Securities and 
+            Exchange Commission with CIF license number 104/14, regulated by the International Financial Services 
+            Commission of Belize with License numbers IFSC/59/365/TC and IFSC/50/317/AEM.</p>
+    </div>
+
+    <div class="secure">
+        <i class="fa-solid fa-globe fa-4x py-1"></i> 
+        <img src="{% static 'images/secure1.png' %}" alt=""> 
+        <img src="{% static 'images/secure2.png' %}" alt=""> 
+    </div>
+</div>
+
+<div class="footer">
+    <p>CrisOption &copy; 2023. All Rights Reserved.</p>
+</div>
+
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+
+
+
+{% endblock %}

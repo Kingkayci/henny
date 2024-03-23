@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="index-container about-all">
+    <div class="why-us hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+            <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+            <li><a href="{% url 'basic_app:products_stock' %}">Stock</a></li>
+            <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+            <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+            <li><a href="{% url 'basic_app:products_shares' %}">Shares</a></li>
+            <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+            <li><a class="current" href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+            <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+            <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+    <div class="index-legal">
+        <div class="discover why-title">
+            <h3>ENERGIES</h3>
+        </div>
+
+        <div class="why-us-image">
+            <p><img src="{% static 'images/energies.jfif' %}" alt=""></p>
+        </div>
+
+        <div class="discover gen-title">
+            <p>The energies sector offers the trading of energy products, specifically crude oil and natural gas. Energies are innately volatile markets because of the direct impact world events can have on supply. So trade oil now with CrisOption and enjoy the benefits of these markets as they allow for fast and efficient trade execution. <br> <br>
+
+                The most typical feature of energy prices is high volatility, which is the result of numerous political and environmental factors that influence it. Many supply and demand factors also affect energy prices, the strongest of which is global economic growth. In times of economic prosperity the demand for energies increases, while a decrease in consumption occurs when economy stagnates. <br> <br>
+                
+                Beside economic changes, extreme weather conditions can also have a great impact on energies, leading to supply disruptions of crude oil, natural gas, or heating oil. As a result, such conditions can decrease or increase demand for many consumer services related to these energies. Moreover, global energy prices are highly affected by the political instability in some of the world’s biggest natural gas fields. <br> <br>
+            
+                Oil trading is a globalized, 24-hour market, with its prices in constant motion. This makes it an ideal instrument for day traders who look for fast movements and choose CFDs as the easiest way to trade on oil prices.</p>
+
+            <br>
+
+            <h4>ADVANTAGES OF OIL TRADING AND ENERGIES TRADING WITH CrisOption</h4>
+            <p>* High volatility - greater price movement <br>
+                * Trade oil – the most actively traded commodity worldwide <br>
+                * Go short/long according to market moves <br>
+                * Trade on a margin of as low as 5 USD <br>
+                * No overnight financing on oil CFDs <br>
+                * No extra fees applicable</p>
+        </div>
+        
+    </div>
+
+    <div class="why-us big-hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+            <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+            <li><a href="{% url 'basic_app:products_stock' %}">Stock</a></li>
+            <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+            <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+            <li><a href="{% url 'basic_app:products_shares' %}">Shares</a></li>
+            <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+            <li><a class="current" href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+            <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+            <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="index-last">
+    <div class="ending">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <div class="images">
+            <img src="{% static 'images/bitcoin.jfif' %}" alt="">
+            <img src="{% static 'images/master.jfif' %}" alt="">
+            <img src="{% static 'images/visa.jfif' %}" alt="">
+            <img src="{% static 'images/paypal.jfif' %}" alt="">
+            <img src="{% static 'images/neteller.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/payeer.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/maestro.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/giropay.jfif' %}" alt="">
+            
+        </div>
+    </div>
+
+    <div class="last-header">
+        <div class="market-1">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                <li><a href="{% url 'basic_app:products_stock' %}">Stocks</a></li>
+                <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            </ul>    
+        </div>
+
+        <div class="market-2">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-1">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:why_us' %}">Why Us</a></li>
+                <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'basic_app:terms' %}">Legal Terms</a></li>
+                <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                <li><a href="{% url 'basic_app:safety_funds' %}">Funds Safety</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-2 hide">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                <li><a href="{% url 'basic_app:global_awards' %}">Global Awards </a></li>
+                <li><a href="{% url 'basic_app:faq' %}">FAQs</a></li>
+                <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            </ul>   
+        </div>
+
+        <div class="trading-1 hide">
+            <h3>Trading</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Trading Conditions</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Platforms</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Deposit/Withdrawal</a></li>
+            </ul>   
+        </div>
+
+        <div class="education-1 hide">
+            <h3>Education</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages Of CFDs</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+            </ul>   
+        </div>
+
+    </div>
+
+    <div class="support">
+        <p>Message us on <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+    </div>
+
+    <div class="license">
+        <p>CrisOption (www.crisoption.com) is License by the Cyprus Securities and 
+            Exchange Commission with CIF license number 104/14, regulated by the International Financial Services 
+            Commission of Belize with License numbers IFSC/59/365/TC and IFSC/50/317/AEM.</p>
+    </div>
+
+    <div class="secure">
+        <i class="fa-solid fa-globe fa-4x py-1"></i>
+        <img src="{% static 'images/secure1.png' %}" alt=""> 
+        <img src="{% static 'images/secure2.png' %}" alt=""> 
+    </div>
+</div>
+
+<div class="footer">
+    <p>CrisOption &copy; 2023. All Rights Reserved.</p>
+</div>
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+{% endblock %}

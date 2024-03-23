@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" media="screen and (max-width:825px)" href="{% static 'css/mobile.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sofia+Sans+Extra+Condensed:ital,wght@1,200&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CrisOption</title>
+</head>
+<body>
+    <div class="general-body">
+
+    
+    <!-- Main Header -->
+    <header id="main-header" class="py-header">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <h3 class="award">
+            <i class="fa-solid fa-medal"></i> 
+            Award-winning broker offering CFDs on Forex, Cryptocurrencies, Binary Options, Indices and lots more</h3>
+    </header>
+
+    <header id="navbar-header"> 
+        <p><i class="fa-solid fa-globe fa-2x py-1"></i></p>
+        <p><i class="fa-solid fa-globe fa-3x py-1"></i></p>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="fa-solid fa-bars fa-2x"></i></label>
+
+    <!-- Navbar -->
+        <nav class="navbar py-1">
+            <ul>
+                <li><a href="{% url 'basic_app:home' %}">HOME</a></li>
+                <li><a href="#">ABOUT +</a>
+                    <ul>
+                        <li><a href="{% url 'basic_app:why_us' %}">Why us</a></li>
+                        <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                        <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                        <li><a href="{% url 'basic_app:global_awards' %}">Global Awards</a></li>
+                        <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                        <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                        <li><a href="{% url 'basic_app:safety_funds' %}">Safety Of Funds</a></li>
+                        <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+                        <li><a href="{% url 'basic_app:terms' %}">Terms & Conditions</a></li>
+                        <li><a href="{% url 'basic_app:faq' %}">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PRODUCTS +</a>
+                    <ul>
+                        <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                        <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                        <li><a href="{% url 'basic_app:products_stock' %}">Stock</a></li>
+                        <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+                        <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                        <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                        <li><a href="{% url 'basic_app:products_shares' %}">Shares</a></li>
+                        <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                        <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                        <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                        <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">EDUCATION +</a>
+                    <ul>
+                        <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                        <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                        <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                        <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages of Trading CFDs</a></li>
+                        <li><a href="{% url 'basic_app:education_cfd-risk' %}">Potential Risks of CFD Trading</a></li>
+                        <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ACCOUNTS +</a>
+                    <ul>
+                        <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                        <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                        <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Deposit & Withdrawal</a></li>
+                        <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Conditions</a></li>
+                        <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Trading Platforms</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="{% static 'javascript/main.js' %}"></script>
+    </div>
+
+    
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
+
+

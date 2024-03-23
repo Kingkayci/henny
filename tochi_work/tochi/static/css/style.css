@@ -1,0 +1,1575 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.py-1 { padding: 1rem 0}
+.py-header { padding: 1rem 2rem}
+
+#main-header {
+    background: black;
+    color: #fff;
+    display: flex;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+#main-header ul {
+    display: flex;
+    margin-left: 4rem;
+    list-style: none;
+    align-items: center;
+}
+
+#main-header li {
+    margin: 0 0.7rem;
+}
+
+#main-header a {
+    color: #fff;
+    padding: 0 0.3rem;
+}
+
+#main-header h3 {
+    margin-right: 4.5rem;
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-header i {
+    color: rgb(64, 142, 206);
+}
+
+#navbar-header {
+    position: sticky;
+    right: 0; left: 0; top: 0;
+    margin-top: 1rem;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#navbar-header i:first-child {
+    margin-left: 2rem;
+}
+
+#navbar-header .navbar ul {
+    list-style: none;
+    margin-right: 7rem;
+}
+
+#navbar-header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+#navbar-header .navbar ul li a {
+    display: block;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Space Mono', monospace;
+    padding: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+
+#navbar-header .navbar ul li a:hover {
+    color: rgb(64, 142, 206);
+}
+
+#navbar-header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #333;
+    display: none;
+}
+
+#navbar-header .navbar ul li ul li {
+    width: 100%;
+}
+ 
+#navbar-header .navbar ul li ul li a {
+    color: #fff;
+    transition: all 0.4s ease-in;
+    padding: 0.7rem;
+}
+
+#navbar-header .navbar ul li ul li a:hover {
+    color: rgb(64, 142, 206);
+}
+
+#navbar-header .navbar ul li:focus-within > ul,
+#navbar-header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+#navbar-header label {
+    cursor: pointer;
+    margin-top: 1rem;
+    display: none;
+}
+
+.refer {
+    background-color: rgb(64, 142, 206);
+    padding: 4rem;
+}
+
+.refer h4 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: white;
+}
+
+.refer p {
+    text-align: center;
+}
+
+.refer a {
+    color: black;
+    font-size: 0.9rem;
+    background-color: white;
+    padding: 0.8rem 3rem;
+    border-radius: 2px;
+    margin-top: 1rem;
+    font-family: 'Space Mono', monospace;
+    transition: all ease-in-out 1s;
+}
+
+.refer a:hover {
+    background: black;
+    color: white;
+}
+
+.blue-text {
+    display: none;
+}
+
+.index-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem; margin-top: 2rem;
+}
+
+.big-hide { display: none; }
+
+.index-container .tradingview-widget-container-hide { display: none; }
+.index-container .tradingview-widget-container-hide-mobile { display: none; }
+
+.index-legal {
+    margin: 0 6rem 0 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    color: #333;
+}
+
+.index-legal .legal-title { margin-bottom: 1.8rem; }
+
+
+
+.index-legal .discover {
+    margin-top: 1.5rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.index-legal .discover h3 {
+    font-size: 1.3rem;
+}
+
+
+.index-legal ul {
+    list-style: none;
+}
+
+.index-legal ul li {
+    margin: 1rem 0;
+    border-bottom: #e9e5e5 solid 0.1px;
+}
+
+.index-legal ul .fa-circle {
+    background: #474747;
+    color: #aaa8a8;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+
+.index-legal .pride {
+    margin: 4rem 3rem 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-legal .pride h3 {
+    font-size: 1.3rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.index-legal .pride p {
+    color: rgb(64, 142, 206);
+}
+
+.index-legal .pride h4 {
+    color: rgb(64, 142, 206);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.index-legal .pride .pride-first {
+    padding: 1.7rem 1.9rem;
+    text-align: center;
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px #e9e5e5;
+}
+
+.index-legal .pride .pride-second {
+    padding: 1.7rem 2.7rem;
+    text-align: center;
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px #e9e5e5;
+}
+
+.index-legal .pride .pride-third {
+    padding: 1.5rem 1.3rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: 10px 10px 10px 10px #e9e5e5;
+}
+
+.account-types {
+    background: #504f4f;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+}
+
+.account-types h3 {
+    margin-top: 3rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.account-types h4 {
+    text-align: center;
+}
+
+.account-types h6 {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(64, 142, 206);
+    margin: 2rem 0 3rem 0;
+    font-family: 'Space Mono', monospace;
+}
+
+.account-types .accounts {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.account-types .accounts p {
+    font-size: 0.8rem;
+    text-align: center;
+    border-bottom: solid #cac7c7 1px;
+    margin: 0.2rem 0;
+}
+
+.account-types .accounts h3 {
+    margin: 0; margin-bottom: 1rem;
+    background-color: #474747;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.account-types .accounts .first-account {
+    background-color: white;
+    color: black;
+    margin-bottom: 7rem;
+    padding: 1.2rem;
+}
+
+.account-types .accounts .second-account {
+    background-color: white;
+    color: black;
+    padding: 1.2rem;
+    margin-bottom: 7rem;
+}
+
+.account-types .accounts .third-account {
+    background-color: white;
+    color: black;
+    padding: 1.2rem;
+    margin-bottom: 7rem;
+}
+
+.account-types .accounts .fourth-account {
+    background-color: white;
+    color: black;
+    padding: 1.2rem;
+    margin-bottom: 7rem;
+}
+
+.account-types .accounts i {
+    color: white;
+    background: rgb(64, 142, 206);
+    padding: 0.7rem;
+    border-radius: 50%;
+    margin-bottom: 0.4rem;
+}
+
+
+.account-types .accounts .good-i i {
+    background-color: white;
+    color: green;
+    padding: 0;
+    margin: 0;
+}
+
+.account-types .accounts .bad-i i {
+    background-color: white;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
+.account-types .accounts a {
+    color: white;
+    font-size: 0.9rem;
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2px;
+    margin-top: 1rem;
+    font-family: 'Space Mono', monospace;
+    transition: all ease-in-out 1s;
+}
+
+.account-types .accounts a:hover {
+    background: white;
+    color: rgb(64, 142, 206);
+}
+
+.index-last {
+    background: #333;
+    padding: 2.5rem 5rem 2rem 5rem;
+}
+.index-last .ending {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+    border-bottom: 1px solid #a8a4a4;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+}
+
+.index-last .ending ul {
+    display: flex;
+    margin-left: 5rem;
+    list-style: none;
+    align-items: center;
+}
+
+.index-last .ending ul li {
+    margin-left: 1rem;
+}
+
+.index-last .ending ul li i {
+    color: rgb(64, 142, 206);
+}
+
+.index-last .ending ul li a {
+    color: #fff;
+    padding: 0 0.3rem;
+}
+
+.images img {
+    width: 60px;
+    height: 40px;
+}
+
+
+.last-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    font-family: 'Space Mono', monospace;
+}
+
+.last-header h3 {
+    color: white;
+    border-bottom: 1px solid #a8a4a4;
+}
+
+.last-header ul {
+    list-style: disc;
+    color: white;
+}
+
+.last header ul li {
+    text-align: center;
+}
+
+.last-header ul li a {
+    color: white;
+    font-size: 0.8rem;
+    transition: all ease-in-out 0.4s;
+}
+
+.last-header ul li a:hover {
+    color: rgb(64, 142, 206);
+}
+
+.index-last .support {
+    border-bottom: 1px solid #a8a4a4;
+}
+
+.index-last .support p {
+    margin: 2rem 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(29, 29, 29);
+    padding: 1rem;
+    width: 40%;
+}
+
+.index-last .support p a {
+    color: #a8a4a4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.index-last .license p {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    color: white;
+    margin: 1.5rem 0;
+} 
+
+.index-last .secure {
+    margin: 0 28rem;
+}
+
+.index-last .secure i {
+    background-color: white;
+    padding: 0.5rem 1rem;
+}
+
+.index-last .secure img {
+    width: 55px;
+    height: 40px;
+    margin: 0 1rem;
+}
+
+.footer {
+    background: rgb(29, 29, 29);
+}
+
+.footer p{
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.why-us h3 {
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+}
+
+.why-us ul {
+    list-style: none;
+    margin: 1rem 4rem;
+    padding: 1rem 5rem;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+
+
+
+.why-us ul li {
+    border-bottom: 1px dotted #e9e5e5; 
+}
+
+.why-us ul li a{
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: black;
+    font-family: 'Space Mono', monospace;
+    padding: 1rem 2rem;
+    transition: all 0.4s ease-in;
+}
+
+.why-us ul li a:hover {
+    color: rgb(64, 142, 206);
+}
+
+.why-us-image p {
+    text-align: center;
+}
+
+.why-us-image img {
+    margin: 1rem 0;
+    height: 300px;
+    width: 730px;
+    border-radius: 8px;
+}
+
+.why-title h3 {
+    margin: 0 0 1.2rem 0;
+}
+
+.why-title p {
+    text-align: start;
+}
+
+.customer-service p {
+    text-align: center;
+}
+
+.customer-service img {
+    width: 300px;
+    height: 300px;
+} 
+
+.support-message p {
+    font-size: 1rem;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    background-color: #474747;
+    padding: 0.7rem 1rem;
+    width: 90%;
+    margin-top: 1rem;
+    border-radius: 2px;
+}
+
+.support-message p a {
+    color: rgb(64, 142, 206) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.about-all {
+    margin-bottom: 5rem;
+}
+
+.contact-title h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 4rem 6rem 4rem;
+    grid-gap: 0.1rem;
+}
+
+.contact-info h4 {
+    font-size: 1.2rem;
+    font-family: 'Space Mono', monospace;
+    margin: 1rem 0;
+}
+
+.contact-info .info-1 {
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2rem 0 2rem 10rem;
+    text-align: center;
+    width: 70%;
+    line-height: 2rem;
+    padding: 1rem;
+    border: 3px solid #e0dddd;   
+}
+
+.contact-info .info-2 {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem ;
+    margin: 2rem 10rem 0.5rem 0;
+    border: 3px solid #e0dddd;   
+}
+.contact-info .info-3 {
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 70%;
+    line-height: 2rem;
+    padding: 1rem;
+    margin: 1rem 0 1rem 10rem;
+    border: 3px solid #e0dddd;   
+}
+.contact-info .info-4 {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+    line-height: 2rem;
+    margin: 1rem 10rem 10rem 0;
+    border: 3px solid #e0dddd;   
+}
+
+.contact-info a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #707070;
+    transition: all ease-in-out 0.4s;
+}
+
+.contact-info a:hover {
+    color: rgb(64, 142, 206);
+}
+
+
+.news-title h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.news-title h3 {
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Space Mono', monospace;
+    color: rgb(64, 142, 206);
+}
+
+.news-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 4rem 6rem 4rem;
+    grid-gap: 0.1rem;
+}
+
+
+.news-info h4 {
+    font-size: 1.2rem;
+    font-family: 'Space Mono', monospace;
+    margin: 1rem 0;
+    transition: all ease-in-out 2s;
+}
+
+.news-info h4:hover {
+    color: white;
+    background-color: rgb(64, 142, 206);
+    padding: 1rem 0;
+    border-radius: 6px;
+}
+
+.news-info .news {
+    padding: 4rem 1.9rem;
+    margin: 1rem;
+    text-align: center;
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px #e9e5e5;
+}
+
+.news-info .news p {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+.news-info .news .news-p {
+    color: rgb(64, 142, 206);
+    margin-top: 0;
+    border-bottom: 2px solid #aaa8a8;
+}
+
+.global-title {
+    background-color: whitesmoke;
+    padding: 2rem;
+}
+
+.global-title p {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.96rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.awards-images {
+    margin-bottom: 6rem;
+}
+
+.awards-images .a-img {
+    display: flex;
+    margin: 3rem 1rem;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    
+}
+
+.awards-images .a-img div {
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px #e9e5e5;
+    margin: 0 1rem;
+    padding: 2rem 0;
+}
+
+.awards-images .a-img img {
+    width: 250px;
+    height: 250px;
+    margin: 1rem 1rem;
+}
+
+
+.awards-images .a-img h5 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;  
+    text-align: center;  
+    padding: 0 1rem;
+}
+
+.awards-images .a-img p {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.98rem;
+    margin-top: 0.4rem;
+    text-align: center;
+    padding: 0 1rem;
+    color: rgb(57, 120, 172);
+    transition: all ease-in-out 2s;
+}
+
+.awards-images .a-img p:hover {
+    background: rgb(64, 142, 206);
+    padding: 1rem;
+    color: white;
+}
+
+.gen-title h4 {
+    margin: 0 0 0.5rem 0;
+}
+
+.faq-headers h4 {
+    background-color: rgb(64, 142, 206);
+    padding: 1rem;
+    color: white;
+    border-radius: 4px;
+}
+
+.bold {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.esma {
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.current {
+    color: rgb(10, 187, 10) !important;
+}
+
+
+.p-first {
+    margin: 1.5rem 4rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+}
+
+.deposit-body {
+    margin: 2rem 4rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    margin:  1rem;
+    border: 2px solid #cac7c7;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.deposit-body .content img {
+    width: 60px;
+    height: 50px;
+}
+
+.deposit-body p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.extra {
+    font-family: 1rem;
+    color: white;
+    background: rgb(64, 142, 206);
+    border-radius: 3px;
+    padding: 0.9rem;
+    display: block;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+
+.last-p {
+    margin: 1.5rem 5rem 5rem 5rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+#sign-up-body {
+    background: rgb(196, 222, 243);
+}
+
+.sign-up-container {
+    font-family: 'Space Mono', monospace;
+    padding: 5rem 0  5rem 28rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.sign-up-container .wrap {
+    background: white;
+    color: #504f4f;
+    padding: 3rem 2rem 3rem 2rem;
+    border-radius: 10px;
+    width: 450px;
+}
+
+.sign-up-container .sign-up {
+    margin: 1.5rem 1rem;
+}
+
+.sign-up-container h1, p {
+    text-align: center;   
+}
+
+.sign-up-container .sign-up label {
+    display: block;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.sign-up-container .sign-up .form-input {
+    padding: 1rem;
+    color: #666;
+    border-radius: 5px;
+    border: #ddd 1px solid;
+    width: 100%;
+}
+
+.sign-up-container .sign-up .form-input:focus {
+    outline: #ddd;
+}
+
+.sign-up-container p {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.sign-up-container p a {
+    color: rgb(64, 142, 206);
+    text-decoration: underline;
+    transition: all ease-in-out 0.6s;
+}
+
+.sign-up-container p a:hover {
+    color: #504f4f;
+}
+
+.sign-up-container .sign-up-btn{
+    background: rgb(64, 142, 206);
+    width: 92%;
+    color: white;
+    border-radius: 1rem;
+    border: white 1px solid;
+    padding: 0.5rem;
+    margin-left: 1rem; margin-bottom: 0.5rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    transition: all 0.9s ease-in-out;
+}
+
+.sign-up-container .sign-up-btn:hover{
+    cursor: pointer;
+    background-color: rgb(52, 97, 134);
+}
+
+
+
+.log-in input {
+    padding: 1rem;
+    color: #666;
+    border-radius: 5px;
+    border: #ddd 1px solid;
+    width: 100%;
+}
+
+.log-in input:focus {
+    outline: #ddd;
+}
+
+#log-in {
+    background: rgb(236, 245, 236);
+}
+
+.messages ul {
+    list-style: none;
+    color: rgb(190, 7, 7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#menu-nav { display: none; }
+.dashboard-navbar label { display: none; }
+
+#dashmenu-bar { display: none; }
+.dashboard-pages label { display: none; }
+
+.dashboard-navbar {
+    background: rgb(64, 142, 206);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    font-size: 0.8rem;
+    padding: 1.7rem 0;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+.dashboard-navbar ul {
+    display: flex;
+    margin-left: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+.dashboard-navbar li {
+    margin: 0 0.7rem;
+    list-style: none;
+    align-items: center;
+}
+
+.dashboard-navbar a {
+    color: #fff;
+    padding: 0 0.3rem;
+}
+
+.dashboard-navbar p {
+    text-align: center;
+    align-self: center;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.dashboard-navbar .kyc {
+    align-self: center;
+}
+
+
+.dashboard-navbar .kyc p { font-size: 0.8rem; }
+.dashboard-navbar .log-out p { font-size: 0.8rem; }
+
+.dashboard-navbar .log-out  {
+    align-self: center;
+    margin-right: 3rem;
+}
+
+
+#google_translate_element {
+    align-self: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+}
+
+.dashboard-pages {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    margin-left: 0;
+    padding-bottom: 6rem;
+    background: #fff;
+    box-shadow: 8px 8px 8px 8px #e9e5e5;
+    position: fixed;
+    top: 10%;
+}
+
+.dashboard-pages ul {
+    list-style: none;
+}
+
+.dashboard-pages ul li {
+    margin: 2.2rem 0;
+    padding-right: 1rem;
+    padding-left: 0.7rem;
+    
+}
+
+
+.dashboard-pages ul li a:hover {
+    color: #bebbbb;
+}
+
+.dashboard-pages ul li h3 {
+    line-height: 0;
+    font-family: 'Space Monospace', monospace;
+    color: rgb(64, 142, 206);
+    font-size: 1rem;
+    margin-bottom: 2rem ;
+}
+
+.dashboard-pages ul li a {
+    color: #999595;
+}
+
+.dashboard-pages .current-page {
+    background: rgb(64, 142, 206);
+    color: white;
+    padding: 1rem 10rem 1rem 1rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dashboard-pages .current-page:hover {
+    color: white;
+}
+
+.home-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 6rem; margin-left: 2rem;
+    line-height: 1.7rem;
+}
+
+.home-content h3 {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(64, 142, 206);
+}
+
+
+.home-content p {
+    color: #999595;
+    font-size: 0.8rem;
+    text-align: start;
+}
+
+.little-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem 0;
+}
+
+.little-boxes p {
+    background: #fff;
+    box-shadow: 5px 5px 5px 5px #e9e5e5;   
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.tradingview-widget-container-mobile-trade { display: none; }
+.tradingview-widget-container-ipad-trade { display: none; }
+.tradingview-widget-container-ipad { display: none; }
+.tradingview-widget-container-single { display: none; }
+.special h4 { display: none; }
+.special-ipad h4 { display: none; }
+
+.little-boxes p .fa-dollar-sign {
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: rgb(96, 22, 214);
+    border-radius: 3px;
+}
+
+.little-boxes p .fa-coins {
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: rgb(62, 199, 80);
+    border-radius: 3px;   
+}
+
+.little-boxes p .fa-gift {
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: rgb(96, 22, 214);
+    border-radius: 3px;
+}
+
+.little-boxes p .fa-user-plus {
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: rgb(64, 142, 206);
+    border-radius: 3px;
+}
+
+.little-boxes p .fa-envelope {
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: rgb(216, 20, 53);
+    border-radius: 3px;
+}
+
+.little-boxes p .fa-sack-dollar {
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: rgb(64, 142, 206);
+    border-radius: 3px;
+}
+
+.little-boxes p .fa-money-check-dollar {
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: rgb(62, 199, 80);
+    border-radius: 3px;
+}
+
+.little-boxes p .fa-money-bill-transfer {
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: rgb(230, 86, 86);
+    border-radius: 3px;   
+}
+
+.dollar {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.home-content h4 {
+    color: #b9b6b6;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    font-family: 'Space Mono', monospace;
+}
+
+.home-content h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1a1919;
+    font-weight: lighter;
+}
+
+.profit-body {
+    background: #fff;
+    box-shadow: 8px 8px 8px 8px #e9e5e5;
+    margin-top: 3rem; margin-right: 1rem;  
+    padding: 2rem;
+}
+
+.profit-body ul {  
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.profit-body ul li {
+    margin-top: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    color: #494848;
+}
+
+.profit-body h5 {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    color: #494848;
+    margin: 1rem 0;
+}
+
+.profit-body .profit-end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profit-body .profit-end h6 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    color: #999595;
+}
+
+.profit-body .profit-end button {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border: 1px solid #b9b6b6;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    color: #999595;
+}
+
+.profit-body .t-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profit-body .t-body h6 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    color: #999595;
+}
+
+.invest-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 5rem;
+}
+
+.invest-body h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: #1a1919;
+    font-weight: lighter;
+    margin: 1rem 0 2rem 0;
+}
+
+.invest-body p {
+    color: #504f4f;
+    line-height: 2rem;
+    font-size: 0.85rem;
+}
+
+.invest-body .invest-first {
+    padding: 1.7rem 1.9rem;
+    margin-right: 1rem; margin-top: 2rem;
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px #e9e5e5;
+}
+
+.invest-body .invest-second {
+    padding: 1.7rem 1.9rem;
+    margin-right: 1rem; margin-top: 2rem; 
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px #e9e5e5;
+}
+
+.invest-body .invest-third {
+    padding: 1.7rem 1.9rem; 
+    margin-right: 1rem; margin-top: 2rem;
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px #e9e5e5;
+}
+
+.invest-body .invest-fourth {
+    padding: 1.7rem 1.9rem; 
+    margin-right: 1rem; margin-top: 2rem;
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px #e9e5e5;
+}
+
+
+.invest-body h6 {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #504f4f;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.invest-body .invest-numbers {
+    font-size: 4rem;
+}
+
+.invest-body input {
+    padding: 0.8rem;
+    margin: 1rem 0;
+    color: #666;
+    border-radius: 5px;
+    border: #ddd 1px solid;
+    width: 100%; 
+}
+
+.invest-body input:focus {
+    outline: #ddd;
+}
+
+.invest-body h5 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(64, 142, 206);
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.invest-body h5 a {
+    color: white;
+    
+    transition: all ease-in-out 2s;
+}
+
+.invest-body h5:hover {
+    color: white;
+    background-color: rgb(52, 97, 134);
+}
+
+
+.profit-body h6 {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #504f4f;
+}
+
+.profit-body h1 {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+    margin: 0 3rem 1rem 3rem;
+    border-radius: 5px;
+    background-color: #c7c4c4;
+    text-align: center;
+    color: #3f3e3e;
+}
+
+.profit-body h6 .user-id {
+    color: rgb(64, 142, 206);
+}
+
+.profit-body .r-title h6{
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    color: #999595;
+    text-align: left;
+}
+
+.support-content {
+    line-height: 3rem;
+}
+
+.support-content h2 {
+    text-align: center;
+}
+
+.support-content p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.payment-body h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1a1919;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.payment-body input {
+    padding: 1rem;
+    color: #666;
+    border-radius: 5px;
+    border: #6d6b6b 1px solid;
+    width: 60%;    
+    margin: 0.5rem 0 3rem 0;
+}
+
+.payment-body .payment-boxes {
+    margin-top: 0.4rem;
+}
+
+.payment-body .payment-boxes p {
+    padding-left: 7rem; padding-right: 7rem;
+    margin-top: 0.4rem;
+    text-align: center;
+}
+
+.payment-body .payment-boxes p a {
+    color: #333;
+    font-size: 0.85rem;
+    transition: all ease-in 0.2s;
+}
+
+.mobile-hide { display: none; }
+
+.payment-body .payment-boxes p a:hover {
+    color: rgb(64, 142, 206);
+}
+
+.payment-channels h2 {
+    margin-bottom: 1rem;
+}
+
+.payment-channels h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Space Monospace', monospace;
+    color: #494848;
+}
+
+.payment-channels p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.payment-channels .wallet-address {
+    color: rgb(64, 142, 206);
+}
+
+.usdt-img img {
+    width: 400px;
+    height: 200px;
+}
+
+.payment-channels h6 {
+    text-align: center;
+    color: #525050;
+}
+
+.payment-channels h1 {
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0 3rem;
+    border-radius: 5px;
+    background-color: #ece9e9;
+    text-align: center;
+    color: #757272;
+}
+
+
+.payment-channels h5 {
+    color: white;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    background-color: rgb(64, 142, 206);
+    font-size: 0.8rem;
+    margin: 1rem 0 2rem 30vw;
+    width: 20%;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.payment-channels h5 a {
+    color: white;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.payment-channels h5:hover {
+    background-color: rgb(52, 97, 134);
+    color: white;
+}
+
+.payment-channels h5 a:hover { background-color: rgb(52, 97, 134); color: white; }
+
+
+.receipt-body h5 {
+    margin-top: 1rem;
+    color: rgb(150, 19, 19);
+}
+
+.receipt-body .receipt-input {
+    padding: 0.8rem;
+    color: #666;
+    border-radius: 3px;
+    border: #ddd 1px solid; 
+    margin-bottom: 0.5rem;
+}
+
+.kyc-body h2 {
+    font-size: 0.9rem;
+}
+
+.card-input {
+    border: 1px solid #525050;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.passport-input {
+    border: 1px solid #525050;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+
+.receipt-btn button {
+    text-align: center;
+    margin-left: 0; margin-top: 1rem;
+    background: rgb(64, 142, 206);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(64, 142, 206);
+    border-radius: 3px;
+    width: 20%;
+}
+
+.receipt-btn button:hover {
+    cursor: pointer;
+    background-color: rgb(52, 97, 134);
+}
+
+.withdraw-error h5 {
+    margin-top: 1rem;
+    color: rgb(212, 48, 48);
+
+}
+
+.copyable-text {
+    position: relative;
+}
+
+.copyable-text p { background-color: #f7f3f3; padding: 1rem 0; font-size: 0.75rem; margin-right: 0.5rem;}
+.copy-hide p { text-align: center;  }
+/* Style the "copy" icon */
+.copy-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2rem;
+    color: rgb(64, 142, 206); 
+    cursor: pointer;
+}
+
+.withdraw-body h6 {
+    font-size: 0.9rem;
+}
+
+
+.discover p {
+    text-align: left;
+}
+
+.widget-extra { margin-right: 12rem; }
+
+
+
+
+
+

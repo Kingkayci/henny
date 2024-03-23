@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" media="screen and (max-width:825px)" href="{% static 'css/mobile.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sofia+Sans+Extra+Condensed:ital,wght@1,200&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CrisOption | User Panel</title>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <div class="dashboard-navbar">
+          <input type="checkbox" id="menu-nav">
+          <label for="menu-nav"><i class="fa-solid fa-bars"></i></label>
+        <p><a class="home" href="{% url 'basic_app:home' %}">CrisOptions</a></p>
+          <ul>
+            <li><a class="fund" href="{% url 'basic_app:payment' %}">Fund Account</a></li>
+            <li><a class="withdraw" href="{% url 'basic_app:withdrawal' %}">Withdraw Funds</a></li>
+          </ul>
+
+            <div id="google_translate_element"></div>
+
+            <div class="kyc">
+                <p><i class="fas fa-layer-group"></i><a href="{% url 'basic_app:kyc' %}">KYC</a></p>
+            </div>
+        
+            <div class="log-out">
+                <p><a target="_blank" href="{% url 'basic_app:logout' %}"><i class="fas fa-user"></i> Log Out</a></p>
+            </div>
+		    </div>
+
+        <div class="grid-container">
+          <input type="checkbox" id="dashmenu-bar">
+            <label for="dashmenu-bar"><i class="fa-solid fa-bars fa-1x"></i></label>
+            <div class="dashboard-pages">
+                <ul>
+                    <li><h3>{{ user.username }}</h3></li>
+                    <p><li><a class="current-page" href="#"><i class="fas fa-home"></i> Dashboard</a></p></li>
+                    <p><li><a href="{% url 'basic_app:dashboard-profit' %}"><i class="fa fa-signal " aria-hidden="true"></i> Profit Record</a></p></li>
+                    <p><li><a href="{% url 'basic_app:dashboard-transaction' %}"><i class="fa fa-briefcase " aria-hidden="true"></i> Transactions</a></p></li>
+                    <p><li><a href="{% url 'basic_app:dashboard-invest' %}"><i class="fas fa-cubes"></i> Invest</a></p></li>
+                    <p><li><a href="{% url 'basic_app:dashboard-referral' %}"><i class="fa fa-th" aria-hidden="true"></i> Refer Users</a></p></li>
+                    <p><li><a href="{% url 'basic_app:dashboard-help' %}"> <i class="fa fa-life-ring" aria-hidden="true"></i> Help/Support</a></p></li>
+                </ul>
+            </div>
+
+
+
+            <div class="home-content">
+              <h3>Welcome, {{ user.username }}!</h3>
+              <p>New investors qualifies for a $5 usdt gift after deposit...</p>
+              <div class="little-boxes">
+                  <p><i class="fa-solid fa-dollar-sign"></i> <span class="dollar">${{ account_balance.acc_balance }}</span> <br> Account Balance</p>
+                  <p><i class="fa-solid fa-coins"></i> <span class="dollar">${{ account_balance.deposit_profit }}</span> <br> Total Deposit + Profit </p>
+                  <p><i class="fa-solid fa-gift"></i> <span class="dollar">${{ account_balance.gift }}</span> <br> Usdt Gift</p>
+                  <p><i class="fa-solid fa-user-plus"></i></i> <span class="dollar">${{ account_balance.referral }}</span> <br> Total Referral Bonus</p>
+                  <p><i class="fa-solid fa-envelope"></i> <span class="dollar">${{ account_balance.total_investment }}</span> <br> Total Investment Plans</p>
+                  <p><i class="fa-solid fa-sack-dollar"></i> <span class="dollar">${{ account_balance.total_active }}</span> <br> Total Active Investment Plan</p>
+                  <p><i class="fa-solid fa-money-check-dollar"></i> <span class="dollar">${{ account_balance.total_deposit }}</span> <br> Total Deposit</p>
+                  <p><i class="fa-solid fa-money-bill-transfer"></i> <span class="dollar">${{ account_balance.total_withdraw }}</span> <br> Total Withdrawals</p>
+                </div>
+    
+                
+                <!-- TradingView Widget BEGIN -->
+                <h4>Personal Trading Chart</h4>
+                <div class="tradingview-widget-container-widescreen">
+                  <div id="tradingview_3cb02"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                  new TradingView.widget(
+                  {
+                  "width": 990,
+                  "height": 610,
+                  "symbol": "BITSTAMP:BTCUSD",
+                  "interval": "D",
+                  "timezone": "Etc/UTC",
+                  "theme": "light",
+                  "style": "1",
+                  "locale": "en",
+                  "enable_publishing": false,
+                  "withdateranges": true,
+                  "hide_side_toolbar": false,
+                  "allow_symbol_change": true,
+                  "details": true,
+                  "hotlist": true,
+                  "container_id": "tradingview_3cb02"
+                }
+                  );
+                  </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+                
+                <!-- TradingView Widget BEGIN -->
+                <div class="special"><h4>Personal Trading Chart</h4></div>
+                <div class="tradingview-widget-container-mobile-trade">
+                  <div id="tradingview_2430b"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                  new TradingView.widget(
+                  {
+                  "width": 320,
+                  "height": 550,
+                  "symbol": "BITSTAMP:BTCUSD",
+                  "interval": "D",
+                  "timezone": "Etc/UTC",
+                  "theme": "light",
+                  "style": "1",
+                  "locale": "en",
+                  "enable_publishing": false,
+                  "withdateranges": true,
+                  "hide_side_toolbar": false,
+                  "allow_symbol_change": true,
+                  "details": true,
+                  "studies": [
+                    "STD;Bollinger_Bands"
+                  ],
+                  "container_id": "tradingview_2430b"
+                }
+                  );
+                  </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container-single">
+                  <div id="tradingview_723e6"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                  <script type="text/javascript">
+                  new TradingView.widget(
+                  {
+                  "width": 720,
+                  "height": 510,
+                  "symbol": "BITSTAMP:BTCUSD",
+                  "interval": "D",
+                  "timezone": "Etc/UTC",
+                  "theme": "light",
+                  "style": "1",
+                  "locale": "en",
+                  "enable_publishing": false,
+                  "hide_side_toolbar": false,
+                  "allow_symbol_change": true,
+                  "details": true,
+                  "studies": [
+                    "STD;SMA"
+                  ],
+                  "container_id": "tradingview_723e6"
+                }
+                  );
+                  </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="special"><h4>Market Overview</h4></div>
+                <div class="tradingview-widget-container-mobile-trade">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                {
+                "colorTheme": "light",
+                "dateRange": "12M",
+                "showChart": true,
+                "locale": "en",
+                "largeChartUrl": "",
+                "isTransparent": false,
+                "showSymbolLogo": true,
+                "showFloatingTooltip": false,
+                "width": "320",
+                "height": "650",
+                "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                "gridLineColor": "rgba(42, 46, 57, 0)",
+                "scaleFontColor": "rgba(106, 109, 120, 1)",
+                "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                "tabs": [
+                {
+                "title": "Indices",
+                "symbols": [
+                  {
+                    "s": "FOREXCOM:SPXUSD",
+                    "d": "S&P 500"
+                  },
+                  {
+                    "s": "FOREXCOM:NSXUSD",
+                    "d": "US 100"
+                  },
+                  {
+                    "s": "FOREXCOM:DJI",
+                    "d": "Dow 30"
+                  },
+                  {
+                    "s": "INDEX:NKY",
+                    "d": "Nikkei 225"
+                  },
+                  {
+                    "s": "INDEX:DEU40",
+                    "d": "DAX Index"
+                  },
+                  {
+                    "s": "FOREXCOM:UKXGBP",
+                    "d": "UK 100"
+                  }
+                ],
+                "originalTitle": "Indices"
+                },
+                {
+                "title": "Futures",
+                "symbols": [
+                  {
+                    "s": "CME_MINI:ES1!",
+                    "d": "S&P 500"
+                  },
+                  {
+                    "s": "CME:6E1!",
+                    "d": "Euro"
+                  },
+                  {
+                    "s": "COMEX:GC1!",
+                    "d": "Gold"
+                  },
+                  {
+                    "s": "NYMEX:CL1!",
+                    "d": "Oil"
+                  },
+                  {
+                    "s": "NYMEX:NG1!",
+                    "d": "Gas"
+                  },
+                  {
+                    "s": "CBOT:ZC1!",
+                    "d": "Corn"
+                  }
+                ],
+                "originalTitle": "Futures"
+                },
+                {
+                "title": "Bonds",
+                "symbols": [
+                  {
+                    "s": "CME:GE1!",
+                    "d": "Eurodollar"
+                  },
+                  {
+                    "s": "CBOT:ZB1!",
+                    "d": "T-Bond"
+                  },
+                  {
+                    "s": "CBOT:UB1!",
+                    "d": "Ultra T-Bond"
+                  },
+                  {
+                    "s": "EUREX:FGBL1!",
+                    "d": "Euro Bund"
+                  },
+                  {
+                    "s": "EUREX:FBTP1!",
+                    "d": "Euro BTP"
+                  },
+                  {
+                    "s": "EUREX:FGBM1!",
+                    "d": "Euro BOBL"
+                  }
+                ],
+                "originalTitle": "Bonds"
+                },
+                {
+                "title": "Forex",
+                "symbols": [
+                  {
+                    "s": "FX:EURUSD",
+                    "d": "EUR to USD"
+                  },
+                  {
+                    "s": "FX:GBPUSD",
+                    "d": "GBP to USD"
+                  },
+                  {
+                    "s": "FX:USDJPY",
+                    "d": "USD to JPY"
+                  },
+                  {
+                    "s": "FX:USDCHF",
+                    "d": "USD to CHF"
+                  },
+                  {
+                    "s": "FX:AUDUSD",
+                    "d": "AUD to USD"
+                  },
+                  {
+                    "s": "FX:USDCAD",
+                    "d": "USD to CAD"
+                  }
+                ],
+                "originalTitle": "Forex"
+                }
+                ]
+                }
+                </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+
+                <h4>Forex Cross Rates </h4>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container-ipad">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                  {
+                  "width": "720",
+                  "height": "510",
+                  "currencies": [
+                    "EUR",
+                    "USD",
+                    "JPY",
+                    "GBP",
+                    "CHF",
+                    "AUD",
+                    "CAD",
+                    "NZD"
+                  ],
+                  "isTransparent": false,
+                  "colorTheme": "light",
+                  "locale": "en"
+                }
+                  </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+               
+                <!-- TradingView Widget BEGIN -->
+                <div class="special-ipad"><h4>Forex Cross Rates </h4></div>
+                <div class="tradingview-widget-container-widescreen">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                  {
+                  "width": "960",
+                  "height": "610",
+                  "currencies": [
+                    "EUR",
+                    "USD",
+                    "JPY",
+                    "GBP",
+                    "CHF",
+                    "AUD",
+                    "CAD",
+                    "NZD"
+                  ],
+                  "isTransparent": false,
+                  "colorTheme": "light",
+                  "locale": "en"
+                }
+                  </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+            
+            
+
+        </div>
+
+
+        
+
+    </div>
+
+    
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="{% static 'javascript/main.js' %}"></script>
+
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+</body>
+</html>

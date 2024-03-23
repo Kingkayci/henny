@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="index-container about-all">
+    <div class="why-us hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <li><a class="current" href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+            <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages of Trading CFDs</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-risk' %}">Potential Risks of CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+    <div class="index-legal">
+        <div class="discover why-title">
+            <h3>WHAT IS FOREX</h3>
+            
+        </div>
+
+        <div class="why-us-image">
+            <p><img src="{% static 'images/edu-forex.jfif' %}" alt=""></p>
+        </div>
+
+        <div class="discover gen-title">
+            <h4>THE FOREX MARKET</h4>
+            <p>The stock market is a place where traders gather in order to buy and sell some product, with the intention of benefiting from the price differences, like the gold stock market, silver stock market, oil stock market, etc. <br> <br>
+
+                The global currency exchange is one of these said stock markets, where different currencies are bought and sold, with the intention of benefiting from the currency prices differences. <br> <br>
+                
+                The global currency exchange is called the foreign exchange, which is known as Forex (FX), and is also known as the currency market. This name has historical origins. After World War II, the Bretton agreement was signed in 1947, which included currency assessment by comparing the Dollar, instead of gold. There was stability in the rates between currencies before 1947, and therefore, currency trading was not possible, due to the absence of noteworthy fluctuations. In 1947, U.S president Richard Nixon decided to untie the connection between the Dollar and other currencies. Since then, prosperity of the market was created due to fluctuations in currency values. However, it was limited to the biggest banks and investment houses, because of the huge amounts needed for trading to benefit from this fluctuation. <br> <br>
+                
+                Since the beginning of the internet revolution in the mid nineties, and the development of the leverage and the margin, the currency market has expanded and became available even for small traders. <br> <br>
+                
+                The size of the Forex currency market is currently considered among the biggest in the world, where the rate of trading reaches around three trillion dollars daily.</p>
+
+            <br>
+
+            <p><span class="bold">Advantages Of Forex Market</span></p> <br>
+            <p>* The Forex market is characterized by features such around the clock activity: The activity in the currency market is continuous for 24 hours, five days a week. Saturdays and Sundays are days off. <br> <br>
+
+                * High liquidity: The currency market is the biggest trading market in the world, with a trading volume of two thousand billion dollars daily, which means the presence of buyers and sellers is around the clock. <br> <br>
+                
+                * Fairness and transparency of the market: The immense nature of the currency market, and the fact that it is affected only by the official data regarding the biggest countries in the world economically, and the officials of these countries, makes the currency market the most transparent. There are no secrets or manipulation here. <br> <br>
+                
+                * Benefitting from the rises and falls of the market: Since currency trading is based on pairs, if the rate of one currency increases, the rate of the other currency decreases against it, generating  balance. <br> <br>
+                
+                * Clarity and limitedness of the market: The number of currencies being traded is very limited, this leads to the concentration on the direction of the rates, and makes it easier to keep track of news. <br> <br>
+                
+                * Leverage: the currency market is where the highest leverage exists. <br> <br>
+                
+                * The main currencies: Each country has its own currency, and it is given a special symbol in the global market. This symbol consists of three letters, the first two for the global symbol of the country, and the last one for the currency. <br> <br>
+                
+                * Currency pairs: Trading in the Forex currency market is based on currency pairs as EUR/USD, where buying and selling processes are executed by buying one of this pair, and selling the other against it. The international banks have agreed upon arranging the currencies symbols in all pairs, in order to unify trading between them. The currency symbol on the first on the left is called the Base currency, and the currency symbol on the right is called the Quote currency, where the price is the paid amount required to get one unit of the Base current. <br> <br>
+                
+                So, when we say GBP/USD, the British pound is put first, so it is the Base currency, and that means that the price in the formula is the price required to be paid by the second currency (the American Dollar) to get one unit of the Base currency (one British pound).</p>
+        </div>
+    </div>
+    <div class="why-us big-hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <li><a class="current" href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+            <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages of Trading CFDs</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-risk' %}">Potential Risks of CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="index-last">
+    <div class="ending">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <div class="images">
+            <img src="{% static 'images/bitcoin.jfif' %}" alt="">
+            <img src="{% static 'images/master.jfif' %}" alt="">
+            <img src="{% static 'images/visa.jfif' %}" alt="">
+            <img src="{% static 'images/paypal.jfif' %}" alt="">
+            <img src="{% static 'images/neteller.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/payeer.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/maestro.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/giropay.jfif' %}" alt="">
+            
+        </div>
+    </div>
+
+    <div class="last-header">
+        <div class="market-1">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                <li><a href="{% url 'basic_app:products_stock' %}">Stocks</a></li>
+                <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            </ul>    
+        </div>
+
+        <div class="market-2">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-1">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:why_us' %}">Why Us</a></li>
+                <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'basic_app:terms' %}">Legal Terms</a></li>
+                <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                <li><a href="{% url 'basic_app:safety_funds' %}">Funds Safety</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-2 hide">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                <li><a href="{% url 'basic_app:global_awards' %}">Global Awards </a></li>
+                <li><a href="{% url 'basic_app:faq' %}">FAQs</a></li>
+                <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            </ul>   
+        </div>
+
+        <div class="trading-1 hide">
+            <h3>Trading</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Trading Conditions</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Platforms</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Deposit/Withdrawal</a></li>
+            </ul>   
+        </div>
+
+        <div class="education-1 hide">
+            <h3>Education</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages Of CFDs</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+            </ul>   
+        </div>
+
+    </div>
+
+    <div class="support">
+        <p>Message us on <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+    </div>
+
+    <div class="license">
+        <p>CrisOption (www.crisoption.com) is License by the Cyprus Securities and 
+            Exchange Commission with CIF license number 104/14, regulated by the International Financial Services 
+            Commission of Belize with License numbers IFSC/59/365/TC and IFSC/50/317/AEM.</p>
+    </div>
+
+    <div class="secure">
+        <i class="fa-solid fa-globe fa-4x py-1"></i>
+        <img src="{% static 'images/secure1.png' %}" alt=""> 
+        <img src="{% static 'images/secure2.png' %}" alt=""> 
+    </div>
+</div>
+
+<div class="footer">
+    <p>CrisOption &copy; 2023. All Rights Reserved.</p>
+</div>
+
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+{% endblock %}

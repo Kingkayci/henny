@@ -1,0 +1,806 @@
+a { text-decoration: none; }
+
+
+#main-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 820px;
+}
+
+#main-header ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 0.1rem;
+    list-style: none;
+    
+}
+
+#main-header li { margin: 0 0 0 5rem; padding-left: 2rem; }
+
+#main-header a { padding: 0 0.3rem; }
+
+#main-header h3 { display: none; }
+
+#navbar-header {
+    padding: 1px;
+    width: 820px;
+    justify-content: space-around;
+}
+
+#navbar-header i:first-child { margin-left: 2rem;}
+
+#navbar-header label { display: initial; }
+
+#navbar-header .navbar {
+    position: absolute;
+    right: 10%; left: 10%;
+    margin-top: 5rem;
+    display: none ;
+}
+#navbar-header .navbar a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar-header .navbar ul li { width: 100%; }
+
+#navbar-header .navbar ul li { position: relative; float: left; background-color: white; width: 670px;}
+
+#navbar-header .navbar ul li a { font-size: 0.8rem; margin: 0.6rem 0; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+#navbar-header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+
+
+#navbar-header .navbar ul li ul li { 
+    font-size: 0.5rem; 
+    background-color: #fdfcfc; 
+    border-bottom: 0.3px dotted #dfdada;
+}
+
+#navbar-header .navbar ul li ul li a { color: black; }
+
+#menu-bar:checked ~ .navbar { display: initial; }
+
+.refer { width: 820px; }
+
+.refer h4 { font-size: 1rem; font-family: Verdana, Geneva, Tahoma, sans-serif; line-height: 2rem; }
+
+.index-container {
+    display: block;
+    justify-content: space-between;
+    margin-left: 3rem; margin-top: 2rem;
+}
+
+.index-legal { margin: 0; }
+
+.index-legal .pride { margin: 4rem 2rem 4rem 3rem; }
+
+.index-container .tradingview-widget-container { display: none; }
+
+.last-trading-view .tradingview-widget-container { margin-top: 2rem; }
+
+.index-container .tradingview-widget-container-hide { display: block; }
+.index-container .tradingview-widget-container-hide-mobile { display: none; }
+
+.index-legal .discover { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.85rem; }
+.index-legal .discover h3 { font-family: 'Space Mono', monospace; font-size: 1.1rem; }
+.index-legal .discover h4 { font-family: 'Space Mono', monospace; font-size: 1.1rem; }
+.global-title p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.8rem; line-height: 1.3rem; }
+
+.account-types .accounts { display: block; margin: 0.5rem 2rem 0.5rem 0.5rem; }
+
+.account-types .accounts .first-account { margin: 2rem; }
+.account-types .accounts .second-account { margin: 2rem; }
+.account-types .accounts .third-account { margin: 2rem; }
+.account-types .accounts .fourth-account { margin: 2rem; margin-bottom: 4rem;}
+
+.status-div { display: none; }
+
+.index-last .ending ul { margin-left: 0.1rem; }
+
+.index-last .ending { padding: 0.3rem; }
+
+.index-last .ending ul li { margin-left: 0.1rem; font-size: 0.7rem; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+.images .hide { display: none; }
+
+.last-header .hide { display: none; }
+
+.last-header { display: grid; grid-template-columns: 1fr 1fr 1fr; margin-left: 2rem; margin-top: 2rem; }
+
+.last-header ul { margin-left: 1rem; color: rgb(223, 219, 219); list-style: none;}
+
+.index-legal { margin: 0 6rem 0 0.2rem; }
+
+.index-last .support p { width: 80%; }
+
+.index-last .secure { margin: 0 13rem; }
+
+.index-last .secure img { margin: 0; margin-left: 0.5rem; }
+
+.index-container .hide { display: none; }
+
+.why-us h3 { font-family: 'Space Mono', monospace; margin-top: 1rem; margin-left: 0.5rem; text-align: left; }
+
+.big-hide { display: block; }
+
+.why-us ul { margin: 1rem 0.2rem; padding: 1rem 0.4rem; background: whitesmoke; border-radius: 5px; }
+
+.why-us ul li { border-bottom: 1px dotted #e9e5e5;}
+
+.why-us ul li a{ font-weight: normal; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.support-message p { width: 95%; }
+
+.awards-images .a-img { display: grid; grid-template-columns: 1fr 1fr; }
+
+.contact-info { display: block; margin: 0; }
+
+.contact-info .info-1 { margin: 2rem; text-align: center; width: 90%; }
+.contact-info .info-2 { margin: 2rem; text-align: center; width: 90%; }
+.contact-info .info-3 { margin: 2rem; text-align: center; width: 90%; }
+.contact-info .info-4 { margin: 2rem; margin-bottom: 5rem; text-align: center; width: 90%; }
+
+.news-info { display: grid; grid-template-columns: repeat(2, 1fr); margin: 2rem 1rem 6rem 1rem; }
+
+.content { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.8rem; font-weight: lighter;}
+
+.p-first { 
+    margin: 1.5rem 0.6rem; 
+    font-size: 0.8rem; 
+    line-height: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: lighter;
+}
+
+
+.extra {
+    font-size: 0.8rem;
+    color: black;
+    background: white;
+    border: 1px solid #666;
+    padding: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+}
+
+.index-legal .faq-headers h4 { font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: lighter; }
+
+.sign-up-container { padding: 5rem 0  5rem 11.5rem; }
+
+.dashboard-container { max-width: 820px; overflow: hidden; }
+
+.dashboard-navbar { width: 820px; }
+.dashboard-navbar p a { margin-right: 2rem; }
+
+.dashboard-navbar label { cursor: pointer; align-self: center; margin-left: 5rem; display: block; }
+
+.dashboard-navbar ul { display: none; }
+#google_translate_element { display: none; }
+.dashboard-navbar .kyc { display: none; }
+.dashboard-navbar .log-out { display: none; }
+
+#menu-nav:checked ~ .dashboard-navbar ul { display: block; }
+#menu-nav:checked ~  .kyc { display: block; }
+#menu-nav:checked ~  .log-out { display: block; }
+#menu-nav:checked ~  #google_translate_element { display: block; }
+
+.dashboard-pages { top: 70px; position: absolute;}
+.dashboard-pages { display: none;}
+
+.dashboard-pages ul li { margin: 2.2rem 0; padding-right: 1rem; }
+
+#dashmenu-bar { display: none; }
+.grid-container label { display: block; margin-top: 8.5rem; z-index: 2; margin-left: 0.2rem; }
+#dashmenu-bar:checked ~ .dashboard-pages { display: initial; margin-left: 1.5rem;}
+
+.home-content { margin-top: 6rem; margin-left: 3rem; margin-bottom: 5rem; }
+
+.little-boxes { grid-template-columns: 1fr 1fr; max-width: 700px; }
+
+.little-boxes p { padding: 0.8rem; margin: 1rem 0.5rem; }
+
+.profit-body { margin-right: 7rem;  width: 700px;}
+
+.invest-body { grid-template-columns: repeat(2, 1fr); margin-right: 8rem; margin-bottom: 5rem;}
+.invest-body .invest-first { width: 350px;}
+.invest-body .invest-second { width: 350px;}
+.invest-body .invest-third { width: 350px;}
+.invest-body .invest-fourth { width: 350px;}
+
+.payment-channels { margin-right: 13rem; }
+
+
+.payment-channels h5 { text-align: center; margin: 1rem 0 2rem 6rem; width: 50%; }
+
+.support-content { margin-right: 13rem; }
+
+.copyable-text p { background-color: #f7f3f3; padding: 1rem 0; font-size: 0.75rem; margin-right: 0;}
+.tradingview-widget-container-ipad { display: block; margin-right: 30rem; }
+.tradingview-widget-container-widescreen { display: none; }
+.tradingview-widget-container-ipad-trade { display: block; }
+.tradingview-widget-container-single { display: block; margin-right: 30rem;}
+.mobile-hide { display: none; }
+    
+
+
+/* SmartPhones Iphone 6,7,8 plus Iphone X */
+@media(max-width:500px) {
+    .dashboard-container { max-width: 450px; overflow: hidden; }
+    .dashboard-container h4 { display: none; }
+    .dashboard-navbar { font-size: 0.7rem; padding: 1.7rem 0; width: 450px; justify-content: space-around;}
+    .dashboard-navbar ul { display: block; }
+    .dashboard-navbar p a { margin-right: 0; }
+    .dashboard-navbar li { margin: 0 0.2rem; margin-right: 2rem; margin-bottom: 1rem; align-items: left; display: block;}
+    .dashboard-navbar p { margin-left: 0.3rem; font-size: 0.7rem; }
+    .dashboard-navbar label { margin-left: 0.3rem; }
+    #menu-nav:checked ~  #google_translate_element { display: none; }
+    .dashboard-pages { top: 100px; position: absolute;}
+    .home-content { margin-top: 8rem; margin-left: 1.3rem; margin-bottom: 3.5rem;}
+    .little-boxes { grid-template-columns: 1fr; max-width: 414px; margin-bottom: 4rem;}
+    .little-boxes p { padding: 0.7rem 0; margin: 0.3rem 0.1rem; width: 330px;}
+    .tradingview-widget-container-mobile-trade { margin-right: 5rem; margin-bottom: 3rem;  display: block; width: 320px; }
+    .tradingview-widget-container-single { display: none; }
+    .tradingview-widget-container-ipad-trade { display: none; }
+    .tradingview-widget-container-ipad { display: none; }
+    .tradingview-widget-container-widescreen { display: none; }
+    .special h4 { display: block; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: lighter; color: black; }
+    .home-content p { margin-right: 2rem;  width: 350px;}
+    .home-content h2 { font-size: 1.1rem;}
+    .home-content h2 a { font-size: 0.8rem;}
+
+
+    .profit-body { margin-right: 13rem;  width: 340px;  padding: 2rem 0;}
+    
+    .profit-body ul p { margin: 0; padding: 0 ; }
+    .profit-body ul li { margin-top: 0; font-size: 0.7rem; color: black; margin: 0;}
+    .profit-body h5 { text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.7rem; }
+    .profit-body .profit-end h6 { text-align: center; color: rgb(31, 30, 30); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.7rem; }
+    .profit-body .profit-end { display: block; }
+    .profit-end div { margin-left: 7.5rem; margin-top: 1rem;}
+    .remove { display: none; }
+    .profit-body { margin-right: 13rem;  width: 320px;  padding: 2rem 0;}
+
+    .profit-body ul p { display: grid; grid-template-columns: 0.3fr 0.3fr 5fr;}
+    .date-div { margin-right: 6rem;}
+   
+
+
+    .profit-body .profit-end button {
+        padding: 0.4rem 0.4rem;
+        margin-right: 0;       
+        border: 1px solid rgb(236, 230, 230);
+        border-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.6rem;
+        color: black;
+        background-color: white;
+    }
+    
+    .profit-body .t-body { justify-content: left; }
+    
+    .profit-body .t-body h6 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.7rem;
+        color: black;
+        margin: 0 1.5rem; margin-bottom: 1rem;
+        font-weight: lighter;
+    }
+
+    .profit-body .r-title h6 { font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 0.5rem; font-size: 0.8rem; text-align: center; color: black; font-weight: lighter; }
+    .profit-body .copyable-text { width: 92vw; }
+    
+
+    .invest-body { grid-template-columns: repeat(1, 1fr); margin-right: 1rem; margin-bottom: 5rem;}
+    .invest-body .invest-first { width: 330px;}
+    .invest-body .invest-second { width: 330px;}
+    .invest-body .invest-third { width: 330px;}
+    .invest-body .invest-fourth { width: 330px;}
+
+    .payment-channels { margin-right: 13rem; }
+    .payment-channels h3 { text-align: left; }
+    .payment-channels h3 .wallet-address { font-size: 0.7rem; }
+
+    .payment-channels h5 { text-align: center; margin: 1rem 0 2rem 6rem; width: 50%; }
+
+    .support-content { margin-right: 13rem; }
+
+    .widescreen-hide { display: none; }
+    .mobile-hide { display: block; }
+    
+    .payment-body input { display: none; }
+    .payment-body h3 { font-size: 0.8rem; }
+
+    .payment-body .payment-boxes {
+        margin-top: 0.4rem;
+    }
+    
+    .payment-body .payment-boxes p { padding-left: 9rem; padding-right: 9rem; width: 85%;}
+
+    .payment-channels { max-width: 400px; }
+    .payment-channels h2 { margin-bottom: 0.5rem; margin-right: 2rem;}
+    .payment-channels h2 { text-align: left; font-size: 1rem; }
+    
+    .payment-channels h3 { text-align: left; font-size: 1rem; }
+    .payment-channels h6 { text-align: left; }
+    
+    .payment-channels p { text-align: left; font-size: 0.8rem; line-height: 1.3rem; }
+    
+    .payment-channels .wallet-address { color: rgb(64, 142, 206); }
+
+    
+    .usdt-img img { width: 338px; height: 160px; }
+
+    .payment-channels .copyable-text { margin-right: 1.9rem; }
+    
+    .payment-channels h5 { margin: 1rem 0 2rem 0; width: 87%; border-radius: 3px; }
+
+    .payment-channels h5 a { font-size: 0.7rem; font-weight: lighter; }
+
+    .receipt-body { max-width: 400px; }
+    .receipt-btn button { width: 50%; margin-left: 1rem;}
+
+    .kyc-body h2 { font-size: 0.7rem; margin-left: 0.6rem; }
+
+    .card-input { padding: 0.5rem 1rem; width: 50%; }
+    
+    .passport-input { padding: 0.5rem 1rem; width: 50%; }
+    
+    .receipt-body h5 { font-size: 0.42rem; }
+
+    
+    .submit-receipt h2 { font-size: 0.8rem; margin-right: 2rem; }
+    .submit-receipt p { font-size: 0.7rem; max-width: 330px;}
+    
+    .withdraw-error h5 { font-size: 0.35rem; }
+
+    .withdraw-body h6 { font-weight: lighter; }
+
+    .dashboard-pages ul li { padding-left: 0.5rem; }
+
+    .dashboard-pages {  margin-left: 0.8rem; }
+
+
+
+    #main-header { font-family: Verdana, Geneva, Tahoma, sans-serif; width: 435px; overflow: hidden;}
+
+    #main-header ul { grid-template-columns: 1.3fr 1.2fr 1fr; margin-left: 1.5rem; }
+
+    #main-header li { margin: 0; margin-left: 0.2rem; padding-left: 0; }
+
+    #main-header i { margin: 0 2px; }
+    
+    #main-header a { padding: 0; }
+
+    #navbar-header { padding: 1px; width: 414px; justify-content: space-around; }
+    
+    #navbar-header .navbar { position: absolute; right: 5%; left: 5%; margin-top: 5rem; display: none ; }
+    
+    #navbar-header .navbar ul li { width: 100%; }
+    
+    #navbar-header .navbar ul li { position: relative; float: left; background-color: white; width: 380px;}
+    
+    #navbar-header .navbar ul li a { font-size: 0.8rem; margin: 0.6rem 0; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    
+    #navbar-header .navbar ul li ul { position: relative; width: 100%; left: 0; }
+    
+    #navbar-header .navbar ul li ul li { font-size: 0.5rem; border-bottom: 0.3px dotted #dfdada; }
+
+    .refer { width: 435px; }
+
+    .refer h4 { font-size: 1rem; line-height: 2rem; font-family: 'Space Mono', monospace;}
+
+    .index-container { margin-left: 1rem; }
+
+    .index-container .tradingview-widget-container-hide { display: none; }
+    .index-container .tradingview-widget-container-hide-mobile { display: block; }
+
+    .index-legal { margin: 0; }
+
+    .index-legal .pride { margin: 2rem 2rem 4rem 1rem; display: block; }
+    .index-legal .pride-first { margin-bottom: 1rem; }
+    .index-legal .pride-second { margin-bottom: 1rem; }
+    .index-legal .pride-third { margin-bottom: 1rem; }
+
+    
+    .account-types .accounts .first-account { margin: 2rem; margin-left: 0.5rem; width: 405px;}
+    .account-types .accounts .second-account { margin: 2rem; margin-left: 0.5rem; width: 405px; }
+    .account-types .accounts .third-account { margin: 2rem; margin-left: 0.5rem; width: 405px; }
+    .account-types .accounts .fourth-account { margin: 2rem; margin-bottom: 4rem; margin-left: 0.5rem; width: 405px;}
+
+    .account-types { margin: 0; padding-right: 2rem; width: 435px;}
+
+    .last-p p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: lighter; font-size: 0.75rem; }
+    
+    .index-last { padding: 2.5rem 1rem; width: 435px; }
+
+    .footer { width: 435px; }
+
+    .index-last .ending { display: block; padding: 1rem; }
+    
+    .index-last .ending ul { display: flex; margin-left: 0.3rem; margin-bottom: 3rem; }
+    
+    .index-last .ending ul li { margin-left: 0.7rem; }
+
+    .images { margin-left: 0.7rem; }
+    .images img {width: 55px; height: 40px; }
+
+    .last-header { grid-template-columns: 1.2fr 1fr 1fr; margin-left: 0; margin-top: 1rem; font-size: 0.7rem; color: #dfdada;}
+
+    .last-header ul { margin-left: 0rem; list-style: none; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    .last-header ul li a { font-size: 0.6rem; color: #bbb7b7;}
+
+    .index-legal .discover { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.75rem; width: 395px; }
+    .index-legal .discover h3 { font-family: 'Space Mono', monospace; font-size: 1rem; }
+    .index-legal .discover h4 { font-family: 'Space Mono', monospace; font-size: 1rem; }
+    .global-title p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.65rem; line-height: 1.3rem; }
+
+    .index-last .support p { width: 80%; 
+        padding: 0.5rem; 
+        margin: 1rem 0; 
+        font-size: 0.7rem; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #bbb7b7;
+        border-radius: 4px;
+    }
+
+    .index-last .license p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        color: #bbb7b7;
+        margin: 1.5rem 0;
+    } 
+
+    .index-last .secure { margin: 0; margin-left: 5rem; }
+    .index-last .secure img { margin: 0; margin-left: 0.5rem; width: 50px; height: 40px; }
+
+    .index-last .secure i { background-color: #dfdada; padding: 0.1rem 0.4rem; }
+    
+    .footer p{ color: #bbb7b7; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.7rem; padding: 1.3rem; text-align: center; }
+
+    .why-us-image img { height: 150px; width: 380px; margin-right: 1rem;}
+
+    .contact-title h2 { font-size: 1.4rem; }
+    .contact-info .info-1 { margin: 2rem; text-align: center; width: 85%; }
+    .contact-info .info-2 { margin: 2rem; text-align: center; width: 85%; }
+    .contact-info .info-3 { margin: 2rem; text-align: center; width: 85%; }
+    .contact-info .info-4 { margin: 2rem; margin-bottom: 5rem; text-align: center; width: 85%; }
+
+    .news-info { display: block; margin: 1rem; }
+    .news-title h2 { font-size: 1.4rem; }
+    .news-title h3 { font-size: 1rem; }
+    .news h4 { font-size: 1rem; }
+
+    .news-info .news { padding: 1rem 1.2rem; margin: 0.5rem 0; }
+    .news-info .news p { font-size: 0.75rem; }
+
+    .global-title { padding: 1rem 0.5rem; }
+
+    .global-title p { font-size: 0.8rem; text-align: left; }
+
+    .awards-images .a-img { display: block; margin: 1rem; padding: 1rem 0; padding-bottom: 0; }
+
+    .awards-images .a-img div { margin: 0; margin-bottom: 1rem; }    
+    .awards-images .a-img img { margin-left: 2.5rem;}    
+
+    .p-first { 
+        margin: 1.5rem 0.3rem; 
+        font-size: 0.7rem; 
+        line-height: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        font-weight: lighter;
+    }
+
+    .deposit-headers h2 { font-size: 1.2rem; }
+    .deposit-headers h3 { font-size: 0.8rem; }
+  
+    .deposit-body { margin: 2rem 0.1rem; width: 388px;}
+    
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.2fr 1fr;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.6rem;
+        margin:  1rem 0;
+        border: 2px solid #cac7c7;
+        border-radius: 3px;
+        padding: 1rem 0;
+    }
+
+    .content .extra {
+        border: 1px solid white;
+        font-size: 0.6rem;
+        padding: 0.9rem 0;
+        display: block;
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    
+    .deposit-body .content img {
+        width: 40px;
+        height: 30px;
+    }
+    
+    .deposit-body p {
+        font-size: 0.7rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .sign-up-container { padding: 5rem 0  5rem 0; font-size: 0.7rem; margin-left: 1.8rem }
+    
+    .sign-up-container .wrap {
+        background: white;
+        color: #504f4f;
+        padding: 3rem 0.5rem;
+        border-radius: 10px;
+        width: 350px;
+    }
+    
+    .discover p {font-size: 0.9rem; margin-right: 0.3rem; margin-left: 0.5rem; }
+    .discover h3 {margin-right: 2.8rem; }
+    .discover ul li { font-size: 0.85rem; margin-right: 2.7rem;}
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* SmartPhones Iphone 6,7,8 */
+@media(max-width:375px) {
+    .dashboard-container { max-width: 375px; overflow: hidden; }
+    .dashboard-navbar { padding: 1.7rem 0; width: 375px; }
+    .dashboard-navbar a { font-size: 0.47rem; }
+
+    .little-boxes { max-width: 375px; }
+    .little-boxes p { padding: 0.7rem 0; margin: 0.3rem 0.1rem; width: 315px;}
+    .tradingview-widget-container-mobile-trade { width: 285px; }
+
+    .profit-body { margin-right: 13rem;  width: 320px;  padding: 2rem 0;}
+    .profit-body ul { width: 330px; }
+    .profit-body ul p { margin: 0 0.4rem; padding: 0 0.4rem; }
+    .profit-body ul li { margin-top: 0; font-size: 0.6rem; color: black;}
+    .profit-body ul li:last-child { margin-right: 5rem;}
+    .dollar { font-size: 0.8rem; font-family: Arial, Helvetica, sans-serif; }
+    
+    .profit-body ul p { display: grid; grid-template-columns: 0.3fr 0.3fr 5fr;}
+    .date-div { margin-right: 6rem;}
+
+    .profit-body ul p { margin: 0; padding: 0 ; }
+    .profit-body ul li { margin-top: 0; font-size: 0.7rem; color: black; margin: 0;}
+    .profit-body h5 { text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.7rem; }
+    .profit-body .profit-end h6 { text-align: center; color: rgb(31, 30, 30); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.7rem; }
+    .profit-body .profit-end { display: block; }
+    .profit-end div { margin-left: 7.5rem; margin-top: 1rem;}
+    .remove { display: none; }
+    .profit-body { margin-right: 13rem;  width: 320px;  padding: 2rem 0;}
+
+    .profit-body ul p { display: grid; grid-template-columns: 0.3fr 0.3fr 5fr;}
+    .date-div { margin-right: 6rem;}
+    
+    .profit-body p { margin-left: 1rem; }
+   
+
+    .invest-body .invest-first { width: 323px;}
+    .invest-body .invest-first h5 { font-weight: lighter;}
+    .invest-body .invest-second { width: 323px;}
+    .invest-body .invest-second h5 { font-weight: lighter;}
+    .invest-body .invest-third { width: 323px;}
+    .invest-body .invest-third h5 { font-weight: lighter;}
+    .invest-body .invest-fourth { width: 323px;}
+    .invest-body .invest-fourth h5 { font-weight: lighter;}
+    
+    
+    
+    .payment-channels p { text-align: left; font-size: 0.8rem; line-height: 1.3rem; max-width: 340px;}
+    .usdt-img img { width: 320px; height: 160px; }
+    .payment-channels .copyable-text { margin-right: 3.2rem; }
+    .payment-channels .copyable-text h1 { padding-right: 2rem; }
+    
+    .bottom p { text-align: left; }
+
+    .payment-channels h5 { margin: 1rem 0 2rem 0; width: 81%; border-radius: 3px; }
+
+
+    #main-header { font-family: Verdana, Geneva, Tahoma, sans-serif; width: 375px; }
+
+    #main-header ul { grid-template-columns: 1.3fr 1.2fr 1fr; margin-left: 0; }
+
+    #main-header li { margin: 0; margin-left: 0.2rem; padding-left: 0; }
+
+    #main-header i { margin: 0 2px; }
+    
+    #main-header a { padding: 0; }
+
+    #navbar-header { padding: 1px; width: 375px; justify-content: space-around; }
+    
+    #navbar-header .navbar { position: absolute; right: 5%; left: 5%; margin-top: 5rem; display: none ; }
+    
+    #navbar-header .navbar ul li { width: 100%; }
+    
+    #navbar-header .navbar ul li { position: relative; float: left; background-color: white; width: 340px;}
+    
+    #navbar-header .navbar ul li a { font-size: 0.8rem; margin: 0.6rem 0; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    
+    #navbar-header .navbar ul li ul { position: relative; width: 100%; left: 0; }
+    
+    #navbar-header .navbar ul li ul li { font-size: 0.5rem; border-bottom: 0.3px dotted #dfdada; }
+
+    .refer { width: 375px; }
+
+    .refer h4 { font-size: 1rem; line-height: 2rem; font-family: 'Space Mono', monospace;}
+
+    .index-container { margin-left: 1rem; }
+
+    .index-container .tradingview-widget-container-hide { display: none; }
+    .index-container .tradingview-widget-container-hide-mobile { display: block; }
+
+    .index-legal { margin: 0; }
+
+    .index-legal .pride { margin: 2rem 2rem 4rem 1rem; display: block; }
+    .index-legal .pride-first { margin-bottom: 1rem; }
+    .index-legal .pride-second { margin-bottom: 1rem; }
+    .index-legal .pride-third { margin-bottom: 1rem; }
+
+    .account-types .accounts .first-account { margin: 2rem; margin-left: 0.5rem; width: 340px;}
+    .account-types .accounts .second-account { margin: 2rem; margin-left: 0.5rem; width: 340px; }
+    .account-types .accounts .third-account { margin: 2rem; margin-left: 0.5rem; width: 340px; }
+    .account-types .accounts .fourth-account { margin: 2rem; margin-bottom: 4rem; margin-left: 0.5rem; width: 340px;}
+    
+    .index-last { padding: 2.5rem 1rem; }
+
+    .index-last .ending { display: block; padding: 1rem; }
+    
+    .index-last .ending ul { display: flex; margin-left: 0.3rem; margin-bottom: 3rem; }
+    
+    .index-last .ending ul li { margin-left: 0.7rem; }
+
+    .images { margin-left: 0.7rem; }
+    .images img {width: 53px; height: 40px; }
+
+    .last-header { grid-template-columns: 1.2fr 1fr 1fr; margin-left: 0; margin-top: 1rem; font-size: 0.7rem; color: #dfdada;}
+
+    .last-header ul { margin-left: 0rem; list-style: none; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    .last-header ul li a { font-size: 0.6rem; color: #bbb7b7;}
+
+    .index-legal .discover { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.75rem; }
+    .index-legal .discover h3 { font-family: 'Space Mono', monospace; font-size: 0.9rem; }
+    .index-legal .discover h4 { font-family: 'Space Mono', monospace; font-size: 1rem; }
+    .index-legal .discover p { font-size: 0.85rem; margin-right: 3.5rem; }
+    .index-legal .discover ul li {font-size: 0.5rem; }
+    .index-legal {margin-left: 0.3rem; }
+    .global-title p { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.65rem; line-height: 1.3rem; }
+
+
+    .index-last .support p { width: 80%; 
+        padding: 0.5rem; 
+        margin: 1rem 0; 
+        font-size: 0.7rem; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #bbb7b7;
+        border-radius: 4px;
+    }
+
+    .index-last .license p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        color: #bbb7b7;
+        margin: 1.5rem 0;
+    } 
+
+    .index-last .secure { margin: 0; margin-left: 5rem; }
+    .index-last .secure img { margin: 0; margin-left: 0.5rem; width: 50px; height: 40px; }
+
+    .index-last .secure i { background-color: #dfdada; padding: 0.1rem 0.4rem; }
+
+    .index-last { padding: 2.5rem 1rem; width: 375px; }
+    
+    .footer p{ color: #bbb7b7; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 0.7rem; padding: 1.3rem; text-align: center; }
+    .footer { width: 375px; }
+
+    .why-us-image img { height: 150px; width: 340px; margin-right: 1rem;}
+
+    .contact-title h2 { font-size: 1.4rem; }
+    .contact-info .info-1 { margin: 2rem; text-align: center; width: 85%; }
+    .contact-info .info-2 { margin: 2rem; text-align: center; width: 85%; }
+    .contact-info .info-3 { margin: 2rem; text-align: center; width: 85%; }
+    .contact-info .info-4 { margin: 2rem; margin-bottom: 5rem; text-align: center; width: 85%; }
+
+    .news-info { display: block; margin: 1rem; }
+    .news-title h2 { font-size: 1.4rem; }
+    .news-title h3 { font-size: 1rem; }
+    .news h4 { font-size: 1rem; }
+
+    .news-info .news { padding: 1rem 1.2rem; margin: 0.5rem 0; }
+    .news-info .news p { font-size: 0.75rem; }
+
+    .global-title { padding: 1rem 0.5rem; }
+
+    .global-title p { font-size: 0.8rem; text-align: left; }
+
+    .awards-images .a-img { display: block; margin: 1rem; padding: 1rem 0; padding-bottom: 0; }
+
+    .awards-images .a-img div { margin: 0; margin-bottom: 1rem; }    
+    .awards-images .a-img img { margin-left: 2.5rem;}    
+
+    .p-first { 
+        margin: 1.5rem 0.3rem; 
+        font-size: 0.7rem; 
+        line-height: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        font-weight: lighter;
+    }
+
+    .deposit-headers h2 { font-size: 1.2rem; }
+    .deposit-headers h3 { font-size: 0.8rem; }
+  
+    .deposit-body { margin: 2rem 0.1rem; width: 370px;}
+    
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.2fr 1fr;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.6rem;
+        margin:  1rem 0;
+        border: 2px solid #cac7c7;
+        border-radius: 3px;
+        padding: 1rem 0;
+    }
+
+    .content .extra {
+        border: 1px solid white;
+        font-size: 0.6rem;
+        padding: 0.9rem 0;
+        display: block;
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    
+    .deposit-body .content img {
+        width: 40px;
+        height: 30px;
+    }
+    
+    .deposit-body p {
+        font-size: 0.7rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .sign-up-container { padding: 5rem 0  5rem 0; }
+    .sign-up-container {
+        font-weight: bold;
+        font-size: 0.7rem;
+        margin-left: 2rem;
+    }
+    
+    .sign-up-container .wrap {
+        background: white;
+        color: #504f4f;
+        padding: 3rem 0.5rem;
+        border-radius: 10px;
+        width: 320px;
+    }  
+
+    .discover p {font-size: 0.9rem; margin-right: 2rem; margin-left: 0.5rem; }
+    .discover h3 {margin-right: 2.8rem; }
+    .discover ul li { font-size: 0.85rem; margin-right: 2.7rem;}
+    
+    
+    
+    
+}
+

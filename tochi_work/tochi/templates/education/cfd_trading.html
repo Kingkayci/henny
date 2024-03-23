@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="index-container about-all">
+    <div class="why-us hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <p></p><li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li></p>
+            <p><li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li></p>
+            <li><a class="current" href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages of Trading CFDs</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-risk' %}">Potential Risks of CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+    <div class="index-legal">
+        <div class="discover why-title">
+            <h3>CFD TRADING</h3>
+            
+        </div>
+
+        <div class="why-us-image">
+            <p><img src="{% static 'images/edu-cfd.jfif' %}" alt=""></p>
+        </div>
+
+        <div class="discover gen-title">
+            <h4><span class="bold esma">What is CFD Trading?</span></h4>
+            <p>CFD trading is the activity of trading contracts for difference with a broker. CFDs (Contract for difference) are derivative products in which you can trade on the difference between a certain asset’s set starting value and its closing value. By using a contract for difference, which is basically just a contract between a buyer and seller that specifies a certain purchase price and allows for profits or losses based on the change in the price of the underlying asset during a specified time frame, a trader can participate in a financial market with a smaller initial investment. <br> <br>
+
+                Since their introduction in the early 1990s, CFDs have become increasingly popular as investors appreciate the lower capital requirements. They allow investors to participate in markets they may not have had access to previously because of large margin requirements or regulatory issues. CFD trading gives traders the ability to go long or short on an asset, and in the U.K., traders can avoid the stamp duty since CFDs are derivative products. <br> <br>
+                
+                CFDs are very reminiscent of binary options. This is because binary options are a form of CFD, with some noticeable differences. The first difference being that the potential return or loss can vary depending on how much movement occurs. In trading binary options your potential return is predetermined and dependent solely on your initial invested sum and making a correct prediction. With CFDs, however, there is the additional element of the difference. The larger the difference becomes the greater the potential return or loss. <br> <br>
+                
+                When trading CFDs you predict your chosen asset’s movement in the market. As you do in traditional trading, you Buy when your prediction is a rise in value and Sell when your prediction is a fall in value. This does not mean you are buying or selling the asset because when investing in CFDs you are investing in your right to earn from the asset’s movement not the asset itself. However, it is important to remember that you can lose your investments should the asset price move in the opposite direction from your prediction. <br> <br>
+                
+                For example: <br>
+                You’ve read a report on Apple that indicates the stock will plummet in the next few days. You then enter our trading platform and watch its behavior on our live, real-time graph and decide you agree. <br>
+                
+                Do you Buy? Or Sell? <br>
+                To Buy would mean the stock needs to go up higher than the Buy price. <br>
+                To Sell would mean the stock needs to fall lower than the Sell price. <br> <br>
+                
+                Has your asset risen by 2 pips beyond the predetermined criteria, or 1? If you predict a sharp change in the asset’s movement during the trade’s time frame then trading a CFD might be your better option. However, there are risks involved, and the potential losses should also be examined.</p>
+            <br>
+
+            </div>
+    </div>
+    <div class="why-us big-hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <p></p><li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li></p>
+            <p><li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li></p>
+            <li><a class="current" href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages of Trading CFDs</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-risk' %}">Potential Risks of CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="index-last">
+    <div class="ending">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <div class="images">
+            <img src="{% static 'images/bitcoin.jfif' %}" alt="">
+            <img src="{% static 'images/master.jfif' %}" alt="">
+            <img src="{% static 'images/visa.jfif' %}" alt="">
+            <img src="{% static 'images/paypal.jfif' %}" alt="">
+            <img src="{% static 'images/neteller.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/payeer.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/maestro.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/giropay.jfif' %}" alt="">
+            
+        </div>
+    </div>
+
+    <div class="last-header">
+        <div class="market-1">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                <li><a href="{% url 'basic_app:products_stock' %}">Stocks</a></li>
+                <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            </ul>    
+        </div>
+
+        <div class="market-2">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-1">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:why_us' %}">Why Us</a></li>
+                <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'basic_app:terms' %}">Legal Terms</a></li>
+                <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                <li><a href="{% url 'basic_app:safety_funds' %}">Funds Safety</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-2 hide">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                <li><a href="{% url 'basic_app:global_awards' %}">Global Awards </a></li>
+                <li><a href="{% url 'basic_app:faq' %}">FAQs</a></li>
+                <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            </ul>   
+        </div>
+
+        <div class="trading-1 hide">
+            <h3>Trading</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Trading Conditions</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Platforms</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Deposit/Withdrawal</a></li>
+            </ul>   
+        </div>
+
+        <div class="education-1 hide">
+            <h3>Education</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages Of CFDs</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+            </ul>   
+        </div>
+
+    </div>
+
+    <div class="support">
+        <p>Message us on <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+    </div>
+
+    <div class="license">
+        <p>CrisOption (www.crisoption.com) is License by the Cyprus Securities and 
+            Exchange Commission with CIF license number 104/14, regulated by the International Financial Services 
+            Commission of Belize with License numbers IFSC/59/365/TC and IFSC/50/317/AEM.</p>
+    </div>
+
+    <div class="secure">
+        <i class="fa-solid fa-globe fa-4x py-1"></i>
+        <img src="{% static 'images/secure1.png' %}" alt=""> 
+        <img src="{% static 'images/secure2.png' %}" alt=""> 
+    </div>
+</div>
+
+<div class="footer">
+    <p>CrisOption &copy; 2023. All Rights Reserved.</p>
+</div>
+
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+{% endblock %}

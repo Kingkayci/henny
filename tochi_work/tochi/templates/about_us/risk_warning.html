@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="index-container about-all">
+    <div class="why-us hide">
+        <h3>ABOUT</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:why_us' %}">Why us</a></li>
+            <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+            <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+            <li><a href="{% url 'basic_app:global_awards' %}">Global Awards</a></li>
+            <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+            <li><a class="current" href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+            <li><a href="{% url 'basic_app:safety_funds' %}">Safety Of Funds</a></li>
+            <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            <li><a href="{% url 'basic_app:terms' %}">Terms And Conditions</a></li>
+            <li><a href="{% url 'basic_app:faq' %}">FAQ</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+    <div class="index-legal">
+        <div class="discover why-title">
+            <h3>Risk Warning</h3>
+            <p>Trading foreign exchange on margin carries a high level of risk, and may not be suitable for all investors. Before deciding to trade foreign exchange, you should carefully consider your investment objectives, level of experience, and risk appetite. There is a possibility that you may sustain a loss of some or all of your investment and therefore you should not invest money that you cannot afford to lose. You should be aware of all the risks associated with foreign exchange trading, and seek advice from an independent financial advisor if you have any doubts.</p>
+        </div>
+
+        <div class="discover gen-title">
+            <h4>Risks of investing in CFDs</h4>
+            <p>CFDs, especially when highly leveraged (the higher the leverage of the CFD, the more risky it becomes), carry a very high level of risk. They are not standardized products. Different CFD providers have their own terms, conditions and costs. Therefore, generally, they are not suitable for most retail investors.</p> 
+            <br>
+
+            <h4>Liquidity Risk</h4>
+            <p>Liquidity risk affects your ability to trade. It is the risk that your CFD or asset cannot be traded at the time you want to trade (to prevent a loss, or to make a profit).</p>
+            <br>
+
+            <h4>Execution Risk</h4>
+            <p>Execution risk is associated with the fact that trades may not take place immediately. For example, there might be a time lag between the moment you place your order and the moment it is executed.
+            </p>
+            <br>
+
+            <h4>Internet Trading Risk</h4>
+            <p>There are risks associated with utilizing an Internet-based deal execution trading system including, but not limited to, the failure of hardware, software, and Internet connection. Since CrisOption does not control signal power, its reception or routing via Internet, configuration of your equipment or reliability of its connection, we cannot be responsible for communication failures, distortions or delays when trading via the Internet.</p>
+            <br>    
+            
+            <h4>Protection Of Personal Information</h4>
+            <p>Any personal information you provide us will be treated as confidential, shared only within CrisOption and its affiliates, and will not be disclosed to any third party, except under any regulatory or legal proceedings. <br>
+                The personal information that you provide while registering yourself as a user of the site is protected. You can access your registration information through a password selected by you. This password is encrypted, known only to you, and will not be revealed to anyone else. <br>
+                Registration information is safely stored on secure servers that only authorized personnel have access to via a secure password. The company encrypts all personal information, as it is transferred to the company, thus making all of the necessary effort to prevent unauthorized parties from viewing any of this  information.</p>
+            
+            <br>
+            
+            <h4>Acknowledgement</h4>
+            <p>The client acknowledges and declares that he has read, understood and thus accepts without any reservation the following:</p><br>
+            <p>* The value of the Financial Instrument (including currency pair, CFDs, or any other derivative product) may decrease and the client may receive less money than originally invested or the value of the Financial Instruments may present high fluctuations. <br> <br>
+                * Information on past performance of a Financial Instrument does not guarantee the present and/or future performance; the use of historic data does not constitute a binding or safe forecast as to the corresponding future return of the Financial Instruments to which such data refers. <br> <br>
+                * Some Financial Instruments may not become immediately liquid due to various reasons such as reduced demand, and the Company may not be in a position to sell them or easily obtain information on the value of such Financial Instruments or the extent of any related or inherent risk concerning such Financial Instruments. <br> <br>
+                * When a Financial Instrument is negotiated in a currency other than the currency of the client's country of residence, any changes in an exchange rate may have a negative effect on the Financial Instruments' value, price and performance. <br> <br>
+                * A Financial Instrument in foreign markets may entail risks different than the usual risks in the markets at the client's country of residence. The prospect of profit or loss from transactions in foreign markets is also influenced by the exchange rate fluctuations</p>
+            <br>
+
+        </div>
+    </div>
+    <div class="why-us big-hide">
+        <h3>ABOUT</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:why_us' %}">Why us</a></li>
+            <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+            <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+            <li><a href="{% url 'basic_app:global_awards' %}">Global Awards</a></li>
+            <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+            <li><a class="current" href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+            <li><a href="{% url 'basic_app:safety_funds' %}">Safety Of Funds</a></li>
+            <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            <li><a href="{% url 'basic_app:terms' %}">Terms And Conditions</a></li>
+            <li><a href="{% url 'basic_app:faq' %}">FAQ</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+</div>
+
+<div class="index-last">
+    <div class="ending">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <div class="images">
+            <img src="{% static 'images/bitcoin.jfif' %}" alt="">
+            <img src="{% static 'images/master.jfif' %}" alt="">
+            <img src="{% static 'images/visa.jfif' %}" alt="">
+            <img src="{% static 'images/paypal.jfif' %}" alt="">
+            <img src="{% static 'images/neteller.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/payeer.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/maestro.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/giropay.jfif' %}" alt="">
+            
+        </div>
+    </div>
+
+    <div class="last-header">
+        <div class="market-1">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                <li><a href="{% url 'basic_app:products_stock' %}">Stocks</a></li>
+                <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            </ul>    
+        </div>
+
+        <div class="market-2">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-1">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:why_us' %}">Why Us</a></li>
+                <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'basic_app:terms' %}">Legal Terms</a></li>
+                <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                <li><a href="{% url 'basic_app:safety_funds' %}">Funds Safety</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-2 hide">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                <li><a href="{% url 'basic_app:global_awards' %}">Global Awards </a></li>
+                <li><a href="{% url 'basic_app:faq' %}">FAQs</a></li>
+                <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            </ul>   
+        </div>
+
+        <div class="trading-1 hide">
+            <h3>Trading</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Trading Conditions</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Platforms</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Deposit/Withdrawal</a></li>
+            </ul>   
+        </div>
+
+        <div class="education-1 hide">
+            <h3>Education</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages Of CFDs</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+            </ul>   
+        </div>
+
+    </div>
+
+    <div class="support">
+        <p>Message us on <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+    </div>
+
+    <div class="license">
+        <p>CrisOption (www.crisoption.com) is License by the Cyprus Securities and 
+            Exchange Commission with CIF license number 104/14, regulated by the International Financial Services 
+            Commission of Belize with License numbers IFSC/59/365/TC and IFSC/50/317/AEM.</p>
+    </div>
+
+    <div class="secure">
+        <i class="fa-solid fa-globe fa-4x py-1"></i>
+        <img src="{% static 'images/secure1.png' %}" alt=""> 
+        <img src="{% static 'images/secure2.png' %}" alt=""> 
+    </div>
+</div>
+
+<div class="footer">
+    <p>CrisOption &copy; 2023. All Rights Reserved.</p>
+</div>
+
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+
+
+{% endblock %}

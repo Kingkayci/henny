@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" media="screen and (max-width:825px)" href="{% static 'css/mobile.css' %}">
+	<title>CrisOption | User Login</title>
+</head>
+<body>
+	
+<!--Register--> 
+<!-- Section: Log In -->
+<section id="log-in">
+    <div class="log-in-container sign-up-container">
+        <div class="wrap wrap-login">
+            <h1>User Login</h1>
+            {% if messages %}
+            <div class="messages">
+                <ul class="errorlist">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        <form method="POST">			
+            {% csrf_token %}
+            <div class="sign-up log-in">
+                <label for="username">Username</label>
+                {{ login.username }}                    
+            </div>	
+            
+            <div class="sign-up log-in">
+                <label for="password">Password</label>
+                {{ login.password }}                    
+            </div>	
+
+            <input class="login-btn sign-up-btn" type="submit" value="Login">
+    
+            <p>Don't have an account? <a href="{% url 'basic_app:signup' %}">Create account</a>.</p>
+            <p><a href="{% url 'basic_app:home' %}">Home</a></p>
+
+        </form>            
+        </div>
+    </div>
+</section>
+
+<script>
+    // Function to hide the message after 5 seconds (5000 milliseconds)
+    setTimeout(function() {
+        var messages = document.querySelector(".messages");
+        if (messages) {
+            messages.style.display = "none";
+        }
+    }, 4000); // Adjust the time (in milliseconds) as needed
+</script>
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+
+</body>
+</html>

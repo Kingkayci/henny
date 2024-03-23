@@ -1,0 +1,326 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="index-container about-all">
+    <div class="why-us hide">
+        <h3>ABOUT</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:why_us' %}">Why us</a></li>
+            <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+            <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+            <li><a href="{% url 'basic_app:global_awards' %}">Global Awards</a></li>
+            <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+            <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+            <li><a href="{% url 'basic_app:safety_funds' %}">Safety Of Funds</a></li>
+            <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            <li><a class="current" href="{% url 'basic_app:terms' %}">Terms And Conditions</a></li>
+            <li><a href="{% url 'basic_app:faq' %}">FAQ</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+    <div class="index-legal">
+        <div class="discover why-title">
+            <h3>Terms And Conditions</h3>
+            <p>This agreement is between the client and Safe Side Trading LTD - Suite 305, Griffith Corporate Centre Kingstown Saint Vincent 1510 VC,  referred below shortly as CrisOption. Safe Side Trading LTD operated the website and owns the trading platform CrisOption, the owners of the CrisOption trading platform. <br>
+                This agreement supersedes any other agreement, and in the event of any interpretation issues with respect to any other sources, this agreement shall prevail. Any perceived contradictions should be relayed immediately to CrisOption for clarification. Any differences that may be perceived between the English literature and any of the other operational languages, the English version will default as the correct interpretation. <br>
+                Order by which items appear have no relation to their importance.</p>
+        </div>
+
+        <div class="discover gen-title">
+            <h4>A.) GENERAL UNDERSTANDING</h4>
+            <h4>BASELINE DEFINITIONS USED IN THIS LEGAL DOCUMENT</h4>
+            <p><span class="bold">Client:</span> The “Client” is defined as any counterparty to CrisOption, including but not limited to subscribers and users of the CrisOption platform. This may refer to an individual or an institution.</p>
+            <br>
+            <p><span class="bold">Base Currency:</span> The base currency refers to the currency in which all the transactions are made from or to CrisOption. The base currency in this document is United States Dollar, commonly abbreviated as USD or represented as $.</p>
+            <br>
+            <p><span class="bold">Business Day:</span>  Business day refers to any day where the banking system is open in Limassol, Cyprus.
+            </p>
+            <br>
+            <p><span class="bold">Products:</span> Products refer to all the products offered by CrisOption, including but not limited to, the platform and over the telephone. </p>
+            <br>
+            <p><span class="bold">Guarantee Enhancer:</span> Guarantee Enhancer refers to any guarantees provided over and above the funds in a client's account registered with CrisOption.</p>
+            <br>
+            <p><span class="bold">Trading Platform:</span>  Trading Platform refers to the electronic software provided to clients by CrisOption for the purpose of executing financial transactions for Forex trading.</p>
+            <br>
+            <p><span class="bold">Trade:</span> Trade refers to an execution of an order through the CrisOption trading platform, or via the telephone.</p>
+            <br>
+            <p><span class="bold">OTC:</span>  OTC is abbreviation for Over-The-Counter. OTC refers to the transactions executed by CrisOption. All of our transactions are over the counter. We do not transact on exchanges.
+            </p>
+            <br>
+            <p><span class="bold">CrisOption Trading Desk:</span> CrisOption Trading desk refers to the trading desk operated by us at our premises.</p>
+            <br>
+            <p><span class="bold">Age Restrictions:</span>  trading service provided only to clients from 18 years old and above.</p>
+            <br>
+            <p><span class="bold">CrisOption Online Trading System:</span> CrisOption Online Trading System refers to the web-based trading system available at the following URL: www.forex-premium.com</p>
+            <br>
+            <p><span class="bold">Network:</span>  trading service provided only to clients from 18 years old and above.
+            </p>
+            <br>
+            <p><span class="bold">Completed Trade:</span> CrisOption Online Trading System refers to the web-based trading system available at the following URL: www.forex-premium.com
+            </p>
+            <br>
+            
+            <h4>B.) OVERVIEW OF TERMS AND CONDITIONS</h4>
+            <h4>COMMUNICATING WITH <span class="bold">CrisOption</span></h4>
+            <p>The client can contact CrisOption via phone, email, mail or fax. Please note that the preferred language of communication is English, however, you are free to send messages in Arabic, French, Italian, or German. CrisOption prides itself in replying promptly to our client’s queries. CrisOption may utilize the services of a translator for addressing inquiries made in languages other than the ones mentioned above. In event that a translator’s services are utilized, there may be a delay in the promptness of our response.</p>
+            <br>
+
+            <h4>LEGAL RELATIONSHIP</h4>
+            <p>CrisOption is the counterparty in all transactions. This is a consequence of the nature of the products that CrisOption offers.</p>
+            <br>
+
+            <h4>INITIATION OF AGREEMENT</h4>
+            <p>The clauses of this agreement become effective when a client creates any kind of account with CrisOption.</p>
+            
+            <br>
+            <h4>BUSINESS AND REGULATORY ENVIRONMENT</h4>
+            <p>CrisOption, comply with generally accepted rules and regulations, as well as generally accepted accounting norms. As is the case with multinational entities, CrisOption will adhere to the applicable laws of the jurisdiction in which it operates. CrisOption can and will pursue matters in any recognized jurisdiction.</p>
+
+            <br>
+            <h4>POLICY ABOUT REGULATORY INQUIRY</h4>
+            <p>CrisOption will observe total compliance when a government or a regulatory body approaches for more details about a specific account or a specific transaction. CrisOption discloses information to regulatory agencies and government agencies only. We do not disclose any kind of information about the accounts we manage or about specific transactions to private third parties.</p>
+
+            <br>
+            <h4>COSTS ASSOCIATED WITH ACCOUNTS REGISTERED WITH <span class="bold">CrisOption</span></h4>
+            <p>With the exception of ECN related activity, the costs attributed to our clients or in other words, our revenue, is incorporated in the spread of the instrument that the client trades. If for any reason, the client’s activity triggers additional costs, CrisOption passes those costs onto the client.</p>
+
+            <br>
+            <h4>INACTIVITY CHARGE</h4>
+            <p>In case of lack of activity in the trading account for more than 3 months, a fee of $99.90 will be charged every month starting from the third month that there are no new trades open in the trading account.</p>
+
+            <br>
+            <h4>CLIENT REIMBURSEMENTS</h4>
+            <p>CrisOption adopts a high priority policy in reimbursing its clients whenever a valid amount of money is requested. Any balance not required for margin purposes will be furnished to the client as expediently as possible. Credit card deposits will be returned in the similar manner. Wire transfers are also available for reimbursement, however, it will incur a USD 40 bank-handling fee in addition to any charges assessed by your bank.</p>
+
+            <br>
+            <h4>C.) LONGEVITY OF AGREEMENT</h4>
+            <p>By reading this, the client agrees that this agreement will be in effect until the he or she terminates the agreement by placing a written request to CrisOption, or if CrisOption notifies the client about the termination of the agreement, regardless of the reason. It is recommended that if the client wishes to cancel agreement, he notify CrisOption by registered mail. Termination of contract does not release either party of any liabilities that it has accumulated during the contract period. CrisOption reserves the right to make any modifications or changes as necessary to this agreement, with or without notifying the client. It is recommended that the client check the validity of this agreement from time to time.</p>
+
+            <br>
+            <h4>D.) ADVISORY ROLE OF <span class="bold"></span> TEAM</h4>
+            <h4>CLIENT SUITABILITY</h4>
+            <p>CrisOption assumes that its clients are at least 18+ years of age. It is assumed that the Client is independent and expected to make rational decisions about his monetary investments. CrisOption openly acknowledges that Forex trading has risks involved. Therefore, it is presumed that any particular client transacts in a manner that is suitable to his risk tolerance. CrisOption bears no responsibility for any losses suffered by the client due to Forex trading, regardless of the reason.</p>
+
+            <br>
+            <h4>OPINIONS AND RESEARCH</h4>
+            <p>The CrisOption team invests lots of time and money to provide the most accurate analysis for our clients. However, CrisOption will not be held accountable for any financial loss that may occur due to miscommunication or misinterpretation about an opinion delivered by a CrisOption staff member when a client requests an opinion. It is the responsibility of the client to assess the opinion, and make a rational investing decision on his own.</p>
+
+            <br>
+
+            <p><span class="bold">Credit loan terms and conditions</span></p> <br>
+            <p>CrisOption does not provide bonuses of any kind, and a credit loan given by the company is only to allow clients to maximize the potential of opportunities in the market and/or help sustain open positions. If, at any time, the trading account's equity is lower than the credit ("loss point"), the account will be immediately closed and the company will pull back what the remainder of the given credit. <br>
+                CrisOption is taking 100% of the risk on the credit loan; meaning, the client will not owe the company any losses of credit nor any commissions or interest on the added funds. <br>
+                If a specific approval to keep the credit in the account after the equity reached lower than credit ("loss point"), the account will be totally, for all intents and purposes, owned by the company and will be managed as the company see fits, for a period of 3-12 months, depending on the volume created. <br>
+                The credit loans are a great benefit, but it is important to note that it is not demo money! All credit consists of the company's own funds and it is expected of all clients to use it wisely, with caution and low risk. <br>
+                Thank you for the vote of confidence.</p>
+            
+            <br>
+
+            <p><span class="bold">Data Collection- Know your Clients “KYC”</span></p> <br>
+            <p>When you register for an account with CrisOption, it is necessary that we collect some personal data from you for business purposes. By understanding your financial needs, we can treat you fairly as a client, and can provide you with the most suitable products and services, give you the appropriate information on investment strategies, process your requests and transactions, and offer you both sales and post-sales services.</p>
+    
+            <br>
+            <h4>We request the following personal data from you:</h4>
+            <p>* Personal and financial information needed during online registration applications/forms <br>
+                * Documents needed as proof of your identity and residency such as an International Passport, National ID, utility bills or bank statements. <br> <br>
+                Please note that if and when you choose to end your working relationship with CrisOption, we must keep your personal data on record for an additional five years.</p>
+
+            <br>
+            
+            <p><span class="bold"> Use of personal data</span></p> <br>
+            <h4>The following list illustrates the reasons why CrisOption may need to use your personal data:</h4>
+            <p>* To verify your identity <br>
+                * To ensure that you meet the suitability requirements needed to use our products and services <br>
+                * To manage the account you have with us <br>
+                * To process your transactions <br>
+                * To send you information about transaction/post-transaction services <br>
+                * To keep you updated with news on our products, services and any other information relevant to your working relationship with CrisOption <br>
+                * For website improvement purposes <br>
+                * For the analysis of statistical data which will help us provide you with better products and services in the future</p>
+
+
+            <br>
+
+            <br>
+            <h4>SUMMARY OF THE Q&A AMENDMENTS:</h4>
+            <p>1.) Use of trading benefits when offering CFDs or other speculative products;</p>
+            <p><span class="bold esma">ESMA recommendation:</span> The practice of offering bonuses must be avoided; including benefits that are designed to encourage behaviours that are not in the best interests of clients.</p>
+
+            <br>
+
+            <p>2.) Withdrawal of funds from trading accounts when investing in CFDs or other speculative products;</p>
+            <p><span class="bold esma">ESMA recommendation:</span> The firm (the Merchant) should enable its clients to withdraw funds from their trading account at any time. <br>
+                Ordinarily, in the case that there is a positive cash balance in the retail client’s trading account that is not committed margin supporting open positions, this should mean that a firm is able to process the client’s request to withdraw funds (e.g. by sending payment instruction to the bank) on the same day that the request to withdraw funds was made, or the next working day if the client’s request is received outside of normal trading hours.</p>
+
+            <br>
+
+            <p>3) Use of leverage when offering CFDs or other leveraged products to retail clients;</p>
+            <p><span class="bold esma">ESMA recommendation:</span> The firm (the Merchant) must: <br>
+                (a) Recommend that the client does not dedicate his or her entire deposit to meeting margin requirements, in order to protect the client against market volatility; and  <br>
+                (b)   Give clients the option to lower the leverage in order to limit their exposure. The maximum possible leverage limit should not be offered as the default offer to retail clients.</p>
+
+            <br>
+
+            <p>4) Best execution obligations for firms offering CFDs or other speculative products to retail clients</p>
+            <p><span class="bold esma">ESMA recommendation:</span> The Merchant must have an execution policy with certain content. The firm (the Merchant) must not: <br>
+                (a) attempt to exclude or limit best execution responsibilities, or <br>
+                (b) attempt to transfer best execution responsibilities to another party,  through clauses in retail client agreements, contracts, or in the firm’s execution policy; <br>
+                (c) use poorly defined clauses to arbitrarily cancel (usually profitable) client trades.</p>
+
+            <br>
+
+            <h4>LEGAL AGE</h4>
+            <p>The Company’s services and products traded are only available to individuals who are at least 18 years old (and at least the legal age in your jurisdiction). You represent and warrant that if you are an individual, you are at least 18 years old and of legal age in your jurisdiction to form a binding contract, and that all registration information you submit is accurate and truthful. The Company reserves the right to ask for proof of age from you and your account may be suspended until satisfactory proof of age is provided. The Company may, in its sole discretion, refuse to offer its products and services to any person or entity and change its eligibility criteria at any time.</p>
+        </div>
+    </div>
+
+    <div class="why-us big-hide">
+        <h3>ABOUT</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:why_us' %}">Why us</a></li>
+            <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+            <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+            <li><a href="{% url 'basic_app:global_awards' %}">Global Awards</a></li>
+            <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+            <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+            <li><a href="{% url 'basic_app:safety_funds' %}">Safety Of Funds</a></li>
+            <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            <li><a class="current" href="{% url 'basic_app:terms' %}">Terms And Conditions</a></li>
+            <li><a href="{% url 'basic_app:faq' %}">FAQ</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+</div>
+
+<div class="index-last">
+    <div class="ending">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <div class="images">
+            <img src="{% static 'images/bitcoin.jfif' %}" alt="">
+            <img src="{% static 'images/master.jfif' %}" alt="">
+            <img src="{% static 'images/visa.jfif' %}" alt="">
+            <img src="{% static 'images/paypal.jfif' %}" alt="">
+            <img src="{% static 'images/neteller.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/payeer.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/maestro.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/giropay.jfif' %}" alt="">
+            
+        </div>
+    </div>
+
+    <div class="last-header">
+        <div class="market-1">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                <li><a href="{% url 'basic_app:products_stock' %}">Stocks</a></li>
+                <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            </ul>    
+        </div>
+
+        <div class="market-2">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-1">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:why_us' %}">Why Us</a></li>
+                <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'basic_app:terms' %}">Legal Terms</a></li>
+                <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                <li><a href="{% url 'basic_app:safety_funds' %}">Funds Safety</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-2 hide">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                <li><a href="{% url 'basic_app:global_awards' %}">Global Awards </a></li>
+                <li><a href="{% url 'basic_app:faq' %}">FAQs</a></li>
+                <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            </ul>   
+        </div>
+
+        <div class="trading-1 hide">
+            <h3>Trading</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Trading Conditions</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Platforms</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Deposit/Withdrawal</a></li>
+            </ul>   
+        </div>
+
+        <div class="education-1 hide">
+            <h3>Education</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages Of CFDs</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+            </ul>   
+        </div>
+
+    </div>
+
+    <div class="support">
+        <p>Message us on <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+    </div>
+
+    <div class="license">
+        <p>CrisOption (www.crisoption.com) is License by the Cyprus Securities and 
+            Exchange Commission with CIF license number 104/14, regulated by the International Financial Services 
+            Commission of Belize with License numbers IFSC/59/365/TC and IFSC/50/317/AEM.</p>
+    </div>
+
+    <div class="secure">
+        <i class="fa-solid fa-globe fa-4x py-1"></i> 
+        <img src="{% static 'images/secure1.png' %}" alt=""> 
+        <img src="{% static 'images/secure2.png' %}" alt=""> 
+    </div>
+</div>
+
+<div class="footer">
+    <p>CrisOption &copy; 2023. All Rights Reserved.</p>
+</div>
+
+
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+
+{% endblock %}

@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="index-container about-all">
+    <div class="why-us hide">
+        <h3>ABOUT</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:why_us' %}">Why us</a></li>
+            <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+            <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+            <li><a href="{% url 'basic_app:global_awards' %}">Global Awards</a></li>
+            <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+            <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+            <li><a class="current" href="{% url 'basic_app:safety_funds' %}">Safety Of Funds</a></li>
+            <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            <li><a href="{% url 'basic_app:terms' %}">Terms And Conditions</a></li>
+            <li><a href="{% url 'basic_app:faq' %}">FAQ</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+    <div class="index-legal">
+        <div class="discover why-title">
+            <h3>Safety Of Funds</h3>
+        </div>
+
+        <div class="discover gen-title">
+            <h4>Leader In The Industry</h4>
+            <p>CrispFinances is the award-winning Global Leader in Online Trading. With over 200 instruments in forex, spot metals and CFDs on US and UK stocks, spot indices and commodities. CrispFinances serves retail and institutional customers from over 180 countries in Europe, Asia, the Middle East, Africa and Latin America.</p> 
+            <br>
+
+            <h4>Account With Top Tier Banks</h4>
+            <p>CrispFinances provides banking and treasury services through world-class banking institutions to its clients. These banks are completely independent and do not endorse the obligations of CrispFinances to its customers.</p>
+            <br>
+
+            <h4>Segregation Of Clients Funds</h4>
+            <p>Client funds security is a key element of the CrispFinances philosophy alongside unmatched trading conditions and customer support. With global recognition for excellence, solid reputation and multi-award winning services, our clients are assured that their funds are held with security, clarity and integrity. CrispFinances maintains segregated client accounts to ensure that client funds are fully separated from CrispFinances' own funds at all times. Each client account has a unique code to ensure that it is used solely for client funding purposes. All client funds deposited are completely segregated in accordance with strict policies and procedures. Clients can be assured that their funds are safe.</p>
+            <br>
+
+            <h4>Risk Management</h4>
+            <p>CrispFinances through its award-winning trading platforms provides an automated risk-management system to ensure that client account balances will never go negative.</p>
+            <br>    
+        
+        </div>
+    </div>
+
+    <div class="why-us big-hide">
+        <h3>ABOUT</h3>
+        <ul>
+            <li><a href="{% url 'basic_app:why_us' %}">Why us</a></li>
+            <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+            <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+            <li><a href="{% url 'basic_app:global_awards' %}">Global Awards</a></li>
+            <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+            <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+            <li><a class="current" href="{% url 'basic_app:safety_funds' %}">Safety Of Funds</a></li>
+            <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            <li><a href="{% url 'basic_app:terms' %}">Terms And Conditions</a></li>
+            <li><a href="{% url 'basic_app:faq' %}">FAQ</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="index-last">
+    <div class="ending">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <div class="images">
+            <img src="{% static 'images/bitcoin.jfif' %}" alt="">
+            <img src="{% static 'images/master.jfif' %}" alt="">
+            <img src="{% static 'images/visa.jfif' %}" alt="">
+            <img src="{% static 'images/paypal.jfif' %}" alt="">
+            <img src="{% static 'images/neteller.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/payeer.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/maestro.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/giropay.jfif' %}" alt="">
+            
+        </div>
+    </div>
+
+    <div class="last-header">
+        <div class="market-1">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                <li><a href="{% url 'basic_app:products_stock' %}">Stocks</a></li>
+                <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            </ul>    
+        </div>
+
+        <div class="market-2">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-1">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:why_us' %}">Why Us</a></li>
+                <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'basic_app:terms' %}">Legal Terms</a></li>
+                <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                <li><a href="{% url 'basic_app:safety_funds' %}">Funds Safety</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-2 hide">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                <li><a href="{% url 'basic_app:global_awards' %}">Global Awards </a></li>
+                <li><a href="{% url 'basic_app:faq' %}">FAQs</a></li>
+                <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            </ul>   
+        </div>
+
+        <div class="trading-1 hide">
+            <h3>Trading</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Trading Conditions</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Platforms</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Deposit/Withdrawal</a></li>
+            </ul>   
+        </div>
+
+        <div class="education-1 hide">
+            <h3>Education</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages Of CFDs</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+            </ul>   
+        </div>
+
+    </div>
+
+    <div class="support">
+        <p>Message us on <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+    </div>
+
+    <div class="license">
+        <p>CrisOption (www.crisoption.com) is License by the Cyprus Securities and 
+            Exchange Commission with CIF license number 104/14, regulated by the International Financial Services 
+            Commission of Belize with License numbers IFSC/59/365/TC and IFSC/50/317/AEM.</p>
+    </div>
+
+    <div class="secure">
+        <i class="fa-solid fa-globe fa-4x py-1"></i>
+        <img src="{% static 'images/secure1.png' %}" alt=""> 
+        <img src="{% static 'images/secure2.png' %}" alt=""> 
+    </div>
+</div>
+
+<div class="footer">
+    <p>CrisOption &copy; 2023. All Rights Reserved.</p>
+</div>
+
+
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+{% endblock %}

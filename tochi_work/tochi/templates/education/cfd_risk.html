@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="index-container about-all">
+    <div class="why-us hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <p></p><li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li></p>
+            <p><li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li></p>
+            <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages of Trading CFDs</a></li>
+            <li><a class="current" href="{% url 'basic_app:education_cfd-risk' %}">Potential Risks of CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+
+    <div class="index-legal">
+        <div class="discover why-title">
+            <h3>RISKS OF CFD TRADING</h3>
+            <p>As a new trader, it is important to understand the risks associated with CFD trading before you start trading with a live account.</p>
+            
+        </div>
+
+        <div class="why-us-image">
+            <p><img src="{% static 'images/edu-cfd.jfif' %}" alt=""></p>
+        </div>
+
+        <div class="discover gen-title">
+            <p><span class="bold esma">You can lose more than your deposit:</span></p>
+            <p>CFDs are a leveraged product, meaning you can gain exposure to the markets by depositing just a percentage of the full value of the trade you wish to place. This means that while you could make a potential profit if the market moves in your favour, you could just as easily lose more than your deposit if the trade moves against you. <br> <br>
+
+                ​For instance, if you place a CFD trade worth £1000 and the margin rate for the applicable tier is 5%, you only need to deposit 5% of the total value of the position, known as position margin. In this case, you only need to deposit £50 to open the trade. If, however, the price of the product moves against you by 10%, you lose £100 – double your initial investment in the CFD trade. This is because your exposure to the market (or risk) is the same as if you had purchased £1000 worth of physical shares. This means that any move in the market will have a greater effect on your capital than if you had purchased the same value of shares.</p>
+            <br>
+
+            <p><span class="bold esma">Risk of account close-out:</span></p>
+            <p>Market volatility and rapid changes in price, which may arise outside normal business hours if you are trading international markets, can cause the balance of your account to change quickly. <br> <br> If you do not have sufficient funds in your account to cover these situations, there is a risk that your positions will be automatically closed by the platform if the balance of your account falls below the close-out level (as shown on the platform).
+
+                You should continuously monitor your account and deposit additional funds or close your positions (or a portion of your positions) so that the funds in your account cover the total margin requirement at all times.​ <br> <br>
+                
+                The information icon within the main account bar at the top of the platform will detail all your account information, including the close-out percentage level.​ <br> <br>
+                
+                Account close-out example: <br>
+                If the current close-out percentage level is 50% and you have four trades open that each require £500 worth of position margin, your total position margin requirement will be £2000. If your account revaluation amount then drops to less than 50% of the total margin requirement, in this case £1000, some or all of the trades constituting this position may be closed out, potentially at a loss to you. <br> <br>
+                
+                The account revaluation amount is the sum of your cash and any net unrealised profit or loss (as applicable), where net unrealised profit or loss is calculated using the level 1 mid-price.</p>
+            <br>
+
+            <p><span class="bold esma">Market volatility and gapping:</span></p>
+            <p>Financial markets may fluctuate rapidly and the prices of our products will reflect this. Gapping is a risk that arises as a result of market volatility. Gapping occurs when the prices of our products suddenly shift from one level to another, without passing through the level in between. There may not always be an opportunity for you to place an order or for the platform to execute an order between the two price levels. One of the effects of this may be that stop-loss orders are executed at unfavourable prices, either higher or lower than you may have anticipated, depending on the direction of your trade. You are able to limit the risk and impact of market volatility by applying an order boundary or guaranteed stop-loss order.</p>
+            <br>
+
+            <p><span class="bold esma">Holding costs:</span></p>
+            <p>Depending on the positions you hold, and how long you hold them for, you may incur holding costs. These holding costs are applied to your account on a daily basis if you hold positions on certain products overnight past 5pm New York time. In some cases, particularly if you hold positions for a long time, the sum of these holding costs may exceed the amount of any profits, or they could significantly increase losses. It is important that you have sufficient funds in your account to cover your holding costs. <br> <br>
+
+                If the position moves against you, or you allow holding costs to add up, you could lose more than you have deposited and you may be required to make further payments. <br> <br>
+                
+                CFD trading carries a high level of risk to your capital compared to other kinds of investments, and prices could move rapidly against you. It's possible to lose more than your initial deposit and you may be required to make further payments. Therefore, CFD trading may not be appropriate for everyone and we recommend that you understand the risks, and seek independent professional advice if necessary, before deciding whether to start CFD trading.</p>
+        </div>
+    </div>
+    <div class="why-us big-hide">
+        <h3>PRODUCTS</h3>
+        <ul>
+            <p></p><li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li></p>
+            <p><li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li></p>
+            <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages of Trading CFDs</a></li>
+            <li><a class="current" href="{% url 'basic_app:education_cfd-risk' %}">Potential Risks of CFD Trading</a></li>
+            <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+        </ul>
+
+        <div class="customer-service">
+            <p><img src="{% static 'images/customer-service.png' %}" alt=""></p>
+        </div>
+
+        <div class="support-message">
+            <p>Contact us at <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="index-last">
+    <div class="ending">
+        <ul>
+            <li><i class="fas fa-user"></i><a target="_blank" href="{% url 'basic_app:signup' %}">Create Account</a></li>
+            <li><i class="fas fa-user"></i><a href="{% url 'basic_app:refer' %}">Refer A Friend</a></li>
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a target="_blank" href="{% url 'basic_app:login' %}"> Sign In</a></li>
+        </ul>
+        <div class="images">
+            <img src="{% static 'images/bitcoin.jfif' %}" alt="">
+            <img src="{% static 'images/master.jfif' %}" alt="">
+            <img src="{% static 'images/visa.jfif' %}" alt="">
+            <img src="{% static 'images/paypal.jfif' %}" alt="">
+            <img src="{% static 'images/neteller.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/payeer.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/maestro.jfif' %}" alt="">
+            <img class="hide" src="{% static 'images/giropay.jfif' %}" alt="">
+            
+        </div>
+    </div>
+
+    <div class="last-header">
+        <div class="market-1">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_forex' %}">Forex</a></li>
+                <li><a href="{% url 'basic_app:products_indices' %}">Indices</a></li>
+                <li><a href="{% url 'basic_app:products_cfds' %}">CFDs</a></li>
+                <li><a href="{% url 'basic_app:products_stock' %}">Stocks</a></li>
+                <li><a href="{% url 'basic_app:products_crypto' %}">Cryptocurrencies</a></li>
+            </ul>    
+        </div>
+
+        <div class="market-2">
+            <h3>Markets</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:products_metal' %}">Metals</a></li>
+                <li><a href="{% url 'basic_app:products_futures' %}">Futures</a></li>
+                <li><a href="{% url 'basic_app:products_energies' %}">Energies</a></li>
+                <li><a href="{% url 'basic_app:products_bonds' %}">Bonds</a></li>
+                <li><a href="{% url 'basic_app:products_commodities' %}">Commodities</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-1">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:why_us' %}">Why Us</a></li>
+                <li><a href="{% url 'basic_app:privacy' %}">Privacy Policy</a></li>
+                <li><a href="{% url 'basic_app:terms' %}">Legal Terms</a></li>
+                <li><a href="{% url 'basic_app:risk_warning' %}">Risk Warning</a></li>
+                <li><a href="{% url 'basic_app:safety_funds' %}">Funds Safety</a></li>
+            </ul>    
+        </div>
+
+        <div class="general-2 hide">
+            <h3>General</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'basic_app:company_news' %}">Company News</a></li>
+                <li><a href="{% url 'basic_app:global_awards' %}">Global Awards </a></li>
+                <li><a href="{% url 'basic_app:faq' %}">FAQs</a></li>
+                <li><a href="{% url 'basic_app:license' %}">Licenses & Regulation</a></li>
+            </ul>   
+        </div>
+
+        <div class="trading-1 hide">
+            <h3>Trading</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:accounts_types' %}">Account Types</a></li>
+                <li><a href="{% url 'basic_app:accounts_spreads' %}">Spreads</a></li>
+                <li><a href="{% url 'basic_app:accounts_deposit-withdraw' %}">Trading Conditions</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-conditions' %}">Trading Platforms</a></li>
+                <li><a href="{% url 'basic_app:accounts_trading-platforms' %}">Deposit/Withdrawal</a></li>
+            </ul>   
+        </div>
+
+        <div class="education-1 hide">
+            <h3>Education</h3><br>
+            <ul>
+                <li><a href="{% url 'basic_app:education_forex' %}">What is Forex</a></li>
+                <li><a href="{% url 'basic_app:education_fx-strategy' %}">Forex Trading Strategies</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-trading' %}">CFD Trading</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-advantage' %}">Advantages Of CFDs</a></li>
+                <li><a href="{% url 'basic_app:education_cfd-glossary' %}">CFD Glossary</a></li>
+            </ul>   
+        </div>
+
+    </div>
+
+    <div class="support">
+        <p>Message us on <a href="mailto:crisoption00@gmail.com">support@crisoption.com</a></p>
+    </div>
+
+    <div class="license">
+        <p>CrisOption (www.crisoption.com) is License by the Cyprus Securities and 
+            Exchange Commission with CIF license number 104/14, regulated by the International Financial Services 
+            Commission of Belize with License numbers IFSC/59/365/TC and IFSC/50/317/AEM.</p>
+    </div>
+
+    <div class="secure">
+        <i class="fa-solid fa-globe fa-4x py-1"></i> 
+        <img src="{% static 'images/secure1.png' %}" alt=""> 
+        <img src="{% static 'images/secure2.png' %}" alt=""> 
+    </div>
+</div>
+
+<div class="footer">
+    <p>CrisOption &copy; 2023. All Rights Reserved.</p>
+</div>
+
+<script src="//code.tidio.co/bgg03filtv4zwsidkxkkxsyxxx22zcag.js" async></script>
+{% endblock %}
